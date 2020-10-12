@@ -1,0 +1,72 @@
+@mixin addBg($url) {
+	background: url($url);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+@mixin btnStyle($color) {
+	//background: $bg;
+	transition: all .5s;
+	text-transform: uppercase;
+	font-size: 18px;
+	color: $color;
+	overflow: hidden;
+	border-radius: 50px;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	&:hover {
+		//color: #fff;
+		//background: saturate($bg, 80%);
+		text-decoration: none;
+	}
+}
+@mixin initGradientText($color: #ddcb83) {
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-fill-color: transparent;
+	color: $color;
+}
+@mixin setGradientBg($params...) {
+	background-image: -webkit-linear-gradient($params);
+	background-image: -moz-linear-gradient($params);
+	background-image: -o-linear-gradient($params);
+	background-image: -ms-linear-gradient($params);
+	background-image: linear-gradient($params);
+}
+@mixin setRadialGradientBg($params...) {
+	background-image: -webkit-radial-gradient($params);
+	background-image: -moz-radial-gradient($params);
+	background-image: -o-radial-gradient($params);
+	background-image: -ms-radial-gradient($params);
+	background-image: radial-gradient($params);
+}
+@mixin btnHoverAnimation {
+	content: "";
+	position: absolute; top: 0; left: -2em;
+	width: 140%;
+	height: 100%;
+	z-index: 100;
+	background: linear-gradient(to left, rgba(255,255,255,.0), rgba(255,255,255,.2), rgba(255,255,255,.0)) no-repeat -3em 0%;
+	background-size: 4em 100%;
+	transform: skewX(-50deg);
+}
+@mixin btnHoverAnimationToLeft {
+	content: "";
+	position: absolute; top: 0; right: -2em;
+	width: 140%;
+	height: 100%;
+	z-index: 100;
+	background: linear-gradient(to left, rgba(255,255,255,.0), rgba(255,255,255,.2), rgba(255,255,255,.0)) no-repeat -3em 0%;
+	background-size: 4em 100%;
+	transform: skewX(50deg);
+}
+@mixin setPlaceholderColor($color) {
+	&::-webkit-input-placeholder { color: $color; }
+	&::-moz-placeholder { color: $color; }
+	&:-moz-placeholder { color: $color; }
+	&:-ms-input-placeholder { color: $color; }
+}

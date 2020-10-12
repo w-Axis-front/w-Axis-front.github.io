@@ -1,0 +1,396 @@
+//==== Large Devices, Wide Screens ====
+@media only screen and (max-width: 1200px){
+	header {
+		h5 { font-size: 22px; }
+		h1 { font-size: 52px; }
+		.price_container { left: 2em; bottom: -5px; }
+	}
+	#advantages {
+		.advantage_description {
+			.text { padding: 0 30px; }
+		}
+	}
+	#instruction {
+		.header {
+			background-size: 70% 100%;
+		}
+		img { display: inline-block; margin-top: 5px; }
+	}
+	#doc_comment {
+		h1 { font-size: 52px; }
+		h5 { margin-top: 15px; }
+		.btn_wrap { text-align: center; }
+		.timer .timer_description { margin-top: 5px; }
+		.timer .band { display: none !important; }
+	}
+	#steps {
+		figcaption {
+			padding: 0;
+		}
+	}
+	footer {
+		h1 {
+			font-size: 48px;
+		}
+		form {
+			width: 330px;
+		}
+		.footer_product {
+			top: 12px;
+			left: -25px;
+		}
+	}
+}
+//==== Medium Devices, Desktops ====
+@media only screen and (max-width: 992px){
+	header {
+		h5 { font-size: 20px; }
+		h1 { font-size: 44px; }
+		.price_container { left: -1.5em; }
+		.header_footer p { padding: 0 30px; }
+	}
+	#advantages {
+		.arr {
+			max-width: 19%;
+		}
+		.advantage_description {
+			font-size: 12px;
+			.text { padding: 0 13px; }
+		}
+	}
+	#components {
+		.component {
+			.component_name { font-size: 36px; }
+		}
+		.timer {
+			.band { display: none; }
+			.timer_description { bottom: 0; }
+		}
+		.buy_button { padding: 15px 97px; }
+	}
+	#instruction {
+		.header {
+			background-size: 90% 100%;
+		}
+		img { margin-top: 20px; }
+		ul li .step { margin-top: 20px; }
+	}
+	#doc_comment {
+		h1 { font-size: 40px; }
+		h5 { margin-top: 20px; font-size: 30px; }
+		.timer .btn_wrap {
+			text-align: center;
+		}
+		.timer .timer_description { margin-top: 5px; }
+		.timer .band { display: none !important; }
+		.btn_wrap .buy_button { padding: 15px 65px; }
+	}
+	#steps {
+		figcaption {
+			font-size: 12px;
+		}
+	}
+	#user_reviews {
+		.review_wrap .comment_wrap:before {
+			width: 13px;
+			height: 13px;
+			left: -5px;
+		}
+	}
+	footer {
+		h1 {
+			font-size: 36px;
+		}
+		.timer_wrap { text-align: center; }
+		.timer { margin-top: -15px; }
+		.content_wrap {
+			padding: 20px 40px 35px;
+		}
+		.price_container {
+			.dashed_border {
+				width: 120px;
+				height: 120px;
+				.solid_border .price {
+					font-size: 20px;
+					line-height: 80px;
+					p span { font-size: 42px; }
+					p span.regular { font-size: 18px; }
+				}
+			}
+			.old_price {
+				margin-top: 70px;
+				&:before { width: 120px; }
+				.standart { max-width: 120px; }
+			}
+		}
+		form {
+			width: 275px;
+		}
+		.footer_product {
+			top: 60px;
+			left: -65px;
+		}
+	}
+}
+//==== Small Devices, Tablets ====
+@media only screen and (max-width: 767px){
+	.specific_top { max-width: none; }
+	header {
+		background: #9a9091;
+		h1, h5 { text-align: center; }
+		h5 { margin: 0; }
+		h1 { margin-top: 10px; }
+		figure {
+			text-align: center !important;
+			.price_container {
+				left: 40%;
+				bottom: -5px;
+				margin-left: -85px;
+			}
+		}
+		.timer {
+			display: block;
+			max-width: 400px;
+			margin: 25px auto 0;
+		}
+	}
+	#advantages {
+		.table {
+			max-width: 400px;
+			margin: 20px auto;
+		}
+		.advantage_description {
+			.text { font-size: 14px; }
+		}
+	}
+	#components {
+		h1 { text-align: left; font-size: 34px; margin-top: 5px; }
+		h5 { font-size: 26px; margin-bottom: 0; }
+		h1, h5, .component .component_description { padding: 0 20px; }
+		.component .component_description { margin-top: 30px; }
+		.left_col, .right_col {
+			text-align: center;
+		}
+		.right_col > .text-left { text-align: center !important; }
+		.component img {
+			margin: 40px auto 0;
+		}
+		.timer {
+			margin-top: 5em;
+			.timer_description { bottom: 5px; }
+		}
+		.component img.bottom_img { margin-top: 40px; }
+		.component .component_name { font-size: 30px; }
+	}
+	#instruction {
+		@include setGradientBg(180deg, #ffcc8a 0%, #ba9362 20%, #ffecc3 100%);
+		padding: 70px 0 50px;
+		.header {
+			background: #000;
+			h5 { font-size: 30px; }
+		}
+		ul li {
+			.step {
+				line-height: 1;
+				font-size: 14px;
+				margin-top: 25px;
+				&:before {
+					top: -21px;
+					font-size: 50px;
+				}
+			}
+			.step_description {
+				margin-top: 19px;
+				padding: 0 50px;
+				text-align: center;
+			}
+		}
+	}
+	#damage_to_skin h5, #profit_to_skin h5 {
+		font-size: 24px;
+	}
+	#profit_to_skin { background: lighten(#000, 10%); }
+	#doc_comment {
+		padding-top: 40px;
+		.btn_wrap {
+			text-align: center;
+			.buy_button { padding: 10px 70px; }
+		}
+		.timer {
+			text-align: center;
+			margin-top: 20px;
+		}
+		.comment {
+			text-align: center;
+			margin-top: 40px;
+			img { margin-bottom: 30px; }
+		}
+		ul li { text-align: left; margin-bottom: 20px; }
+	}
+	#steps {
+		padding: 40px 0;
+		h1, h5 { text-align: center; }
+		h5 { font-size: 32px; }
+		h1 { font-size: 40px; }
+		figcaption { font-size: 16px; }
+	}
+	#user_reviews {
+		padding: 40px 0;
+		h1 { text-align: center; margin-bottom: 40px; }
+		h5 { text-align: center; }
+		.review_wrap {
+			border: 0;
+			padding-bottom: 0;
+			.img_wrap:before { display: none; }
+			.comment_wrap {
+				margin: 20px 20px 35px 20px;
+				&:before {
+					width: 20px;
+					height: 20px;
+					margin-right: -20px;
+					top: -8px;
+					display: block;
+					left: 48.5%;
+				}
+			}
+		}
+	}
+	footer {
+		@include setGradientBg(0deg, #ffcc8a 0%, #ba9362 20%, #ffecc3 100%);
+		h1 { text-align: center; }
+		.timer {
+			margin-top: 0;
+			margin-bottom: 15px;
+		}
+		.footer_product { position: static; margin-top: 30px; }
+		.clearfix.relative { text-align: center; }
+		.content_wrap {
+			margin: 0 15px;
+			position: relative;
+			border-radius: 12px;
+			.price_container {
+				display: block;
+				float: none;
+				margin: 0 auto;
+				.old_price {
+					display: inline-block;
+					margin-top: 0;
+					position: relative;
+					top: 23px;
+					left: 10px;
+				}
+				.dashed_border {
+					display: inline-block;
+					margin-top: -15px;
+				}
+			}
+			form {
+				display: block;
+				float: none;
+				text-align: center;
+				margin: 30px auto 0;
+				.btn {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 501px){
+	#user_reviews {
+		.name:after {
+			position: static;
+			width: 100%;
+			margin-top: 10px;
+		}
+	}
+}
+//==== Extra Small Devices, Phones ====
+@media only screen and (max-width: 480px){
+	.specific { margin-bottom: 20px; }
+	header {
+		padding-top: 20px;
+		h1 { font-size: 30px; }
+		h5 { font-size: 18px; }
+		figure {
+			img {
+				max-width: 35%;
+			}
+			.price_container {
+				left: 40%;
+				bottom: -1em;
+				margin-left: -60px;
+				.dashed_border {
+					width: 120px;
+					height: 120px;
+					.solid_border .price {
+						font-size: 20px;
+						line-height: 80px;
+						span { font-size: 42px; }
+						span.regular { font-size: 18px; }
+					}
+				}
+			}
+		}
+		.timer {
+			.band { display: none; }
+			.timer_description {
+				bottom: 0;
+				padding-left: 0;
+				display: block;
+			}
+		}
+		.btn_wrap .btn {
+			padding: 15px 80px;
+		}
+	}
+	#advantages {
+		background: #cbab7e;
+		padding: 30px 0 40px;
+		.advantage_description {
+			.text { padding: 0 20px; }
+		}
+	}
+	#components {
+		padding: 30px 0 40px;
+		h1, h5 { padding: 0; text-align: center; }
+		.component .component_description { padding: 0 10px; }
+		.timer {
+			margin-top: 3em;
+			padding: 0 20px;
+			.timer_description {
+				bottom: 0;
+				display: block;
+				padding-left: 0;
+			}
+		}
+	}
+	#instruction {
+		padding: 50px 0 20px;
+		.header {
+			h5 { font-size: 24px; }
+			h5.regular { margin-bottom: 0; }
+			h5.bold { margin-top: 0; }
+		}
+		ul li .step_description { padding: 0; }
+	}
+	#doc_comment {
+		h1 { margin-top: 0; }
+		ul li { padding-left: 10px; }
+	}
+	#steps {
+		h5 { font-size: 26px; }
+		h1 { font-size: 34px; }
+	}
+	#user_reviews .review_wrap .comment_wrap:before { left: 47%; }
+	#user_reviews h1 { font-size: 40px; }
+	#user_reviews h5 { font-size: 28px; margin-bottom: 0; }
+	footer {
+		h1 { font-size: 32px; }
+		.content_wrap {
+			padding: 20px 20px 35px;
+			form .btn { padding: 12.5px 75px; }
+		}
+		form { width: 250px; }
+	}
+}
