@@ -11,6 +11,7 @@
   color: white;
   overflow: hidden;
   text-decoration: none;
+  cursor: pointer;
 
   &:hover {
     color: white;
@@ -29,9 +30,11 @@
     @include media-breakpoint-down(xl3) {
       height: 590px;
     }
+
     @include media-breakpoint-down(xl2) {
       height: 520px;
     }
+
     @include media-breakpoint-down(md) {
       height: auto;
       padding: 0;
@@ -43,12 +46,14 @@
     position: relative;
     z-index: 20;
     pointer-events: none;
+
     @include media-breakpoint-down(md) {
       margin-bottom: 0;
-     }
-     @include media-breakpoint-down(sm) {
+    }
+
+    @include media-breakpoint-down(sm) {
       padding: 0;
-     }
+    }
   }
 
   &__title {
@@ -62,35 +67,43 @@
     @include media-breakpoint-down(xl3) {
       font-size: 43px;
     }
+
     @include media-breakpoint-down(xl1) {
       font-size: 32px;
     }
+
     @include media-breakpoint-down(lg) {
       font-size: 25px;
     }
+
     @include media-breakpoint-down(md) {
       font-size: 31px;
     }
+
     span {
       font-size: 90px;
       line-height: 1.4;
       display: block;
+
       @include media-breakpoint-down(xl3) {
         font-size: 78px;
       }
+
       @include media-breakpoint-down(xl1) {
         font-size: 64px;
       }
+
       @include media-breakpoint-down(lg) {
         font-size: 48px;
       }
+
       @include media-breakpoint-down(md) {
         font-size: 65px;
         line-height: 1;
       }
     }
 
-   
+
   }
 
   &__subtitle {
@@ -114,20 +127,25 @@
     height: 533px;
     display: block;
     pointer-events: none;
+
     @include media-breakpoint-down(xl3) {
       transform: translate(50px, -50%);
     }
+
     @include media-breakpoint-down(xl2) {
       transform: scale(0.9) translate(50px, -53%);
     }
+
     @include media-breakpoint-down(xl) {
       transform: scale(0.8) translate(100px, -60%);
     }
+
     @include media-breakpoint-down(lg) {
       transform: scale(0.6) translate(260px, -90%);
     }
+
     @include media-breakpoint-down(md) {
-     display: none;
+      display: none;
     }
   }
 
@@ -143,7 +161,7 @@
       height: 407px;
       top: 35px;
       right: 100px;
-      cursor: pointer;
+      // cursor: pointer;
       z-index: 3;
       pointer-events: auto;
       animation-duration: 3s;
@@ -251,11 +269,12 @@
     &__img-block {
       pointer-events: auto;
     }
+
     &__img {
       animation-timing-function: cubic-bezier(.13, .92, .29, .88);
 
       &_box {
-        cursor: auto;
+        // cursor: auto;
         animation: none;
         z-index: auto;
 
@@ -398,9 +417,10 @@
   padding: 0;
   margin: 0;
   display: flex;
+
   @include media-breakpoint-down(sm) {
     justify-content: space-between;
-   }
+  }
 
   &__item {
     max-width: 99px;
@@ -410,13 +430,14 @@
 
     @include media-breakpoint-down(sm) {
       padding: 0 5px;
-     }
+    }
 
     &:not(:last-child) {
       margin-right: 48px;
+
       @include media-breakpoint-down(sm) {
         margin-right: 0;
-       }
+      }
     }
   }
 
