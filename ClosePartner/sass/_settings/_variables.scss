@@ -1,0 +1,24 @@
+// Fonts
+$stockFonts: sans-serif, 'Arial';
+$mainFont: 'Roboto', $stockFonts;
+$secondaryFont: 'Montserrat', $stockFonts;
+
+// Bootstrap custom
+$grid-breakpoints: (
+    start: 0,
+    xs: 374px,
+    sm: 575px,
+    md: 767px,
+    lg: 991px,
+    xl: 1199px,
+    xl1: 1365px,
+    xl2: 1439px,
+    xl3: 1600px,
+);
+
+$container-max-widths: (
+    xl: 1170px,
+    xl1: 1230px,
+    xl2: 1310px,
+    xl3: 1470px,
+);

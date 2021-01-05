@@ -1,0 +1,71 @@
+/*
+  Стартовый стили которые нельзя редактировать
+*/
+
+body{
+  font: 400 16px/120% $mainFont;
+  background: #fff;
+  position: relative;
+  color: #000;
+}
+
+.close-partner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+
+  @include media-breakpoint-down(md) {
+    position: static;
+  }
+
+  &__row {
+    height: 650px;
+    align-items: center;
+
+    @include media-breakpoint-down(xl3) {
+      height: 590px;
+    }
+
+    @include media-breakpoint-down(xl2) {
+      height: 520px;
+    }
+
+    @include media-breakpoint-down(md) {
+      height: initial;
+      padding: 115px 0 80px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      padding-bottom: 40px;
+    }
+  }
+}
+
+// Page
+.close-partner.is--page{
+  @include media-breakpoint-down(lg) {
+    position: static;
+  }
+
+  .close-partner{
+    &__row{
+      height: 470px;
+
+      @include media-breakpoint-down(xl3) {
+        height: 365px;
+        padding-top: 30px;
+      }
+
+      @include media-breakpoint-down(xl2) {
+        height: 310px;
+      }
+
+      @include media-breakpoint-down(lg) {
+        height: initial;
+        padding: 100px 0 40px;
+      }
+    }
+  }
+}

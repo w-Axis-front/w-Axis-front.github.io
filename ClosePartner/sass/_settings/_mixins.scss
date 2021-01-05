@@ -1,0 +1,6 @@
+// Bootstrap map get breakpoint custom mixin
+@mixin media-breakpoint-down($name, $breakpoints: $grid-breakpoints) {
+  @media (max-width: map-get($grid-breakpoints, $name)) {
+    @content;
+  }
+}
