@@ -266,10 +266,7 @@
 
 .cp-active {
   .close-partner {
-    &__img-block {
-      pointer-events: auto;
-    }
-
+   
     &__img {
       animation-timing-function: cubic-bezier(.13, .92, .29, .88);
 
@@ -367,7 +364,7 @@
   }
 
   &.close-partner__img-block {
-
+    pointer-events: auto;
     &:hover .close-partner__img_ipad img,
     &:hover .close-partner__img_iphone img,
     &:hover .close-partner__img_airpods-l img,
