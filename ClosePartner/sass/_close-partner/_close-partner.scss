@@ -42,7 +42,7 @@
 	}
 
 	&__text-block {
-		margin-bottom: 45px;
+		margin-bottom: 35px;
 		position: relative;
 		z-index: 20;
 		pointer-events: none;
@@ -81,7 +81,8 @@
 
 		span {
 			font-size: 90px;
-			line-height: 1.4;
+			line-height: 1;
+			padding-bottom: 15px;
 			display: block;
 
 			@include media-breakpoint-down(xl3) {
@@ -97,7 +98,7 @@
 
 			@include media-breakpoint-down(md) {
 				font-size: 65px;
-				line-height: 1;
+				
 			}
 		}
 
@@ -414,7 +415,7 @@
 	margin: 0;
 	display: flex;
 
-	@include media-breakpoint-down(sm) {
+	@include media-breakpoint-down(xs) {
 		justify-content: space-between;
 	}
 
@@ -424,14 +425,14 @@
 		flex-direction: column;
 		align-items: center;
 
-		@include media-breakpoint-down(sm) {
+		@include media-breakpoint-down(xs) {
 			padding: 0 5px;
 		}
 
 		&:not(:last-child) {
 			margin-right: 48px;
 
-			@include media-breakpoint-down(sm) {
+			@include media-breakpoint-down(xs) {
 				margin-right: 0;
 			}
 		}
@@ -686,13 +687,14 @@
 				font-size: 78px;
 				@include media-breakpoint-down(xl3) {
 					font-size: 60px;
-					line-height: 1;
+					padding-bottom: 2px;
 				}
 				@include media-breakpoint-down(xl2) {
 					font-size: 38px;
 				}
 				@include media-breakpoint-down(lg) {
 					font-size: 65px;
+					padding-bottom: 15px;
 				}
 			}
 		}
