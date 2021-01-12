@@ -3,7 +3,7 @@
 /* Slider */
 
 .slick-loading .slick-list {
-    background: #fff url('/../img/gif/ajax-loader.gif') center center no-repeat;
+    background: #fff url('../img/gif/ajax-loader.gif') center center no-repeat;
 }
 
 
@@ -13,8 +13,8 @@
     font-family: 'slick';
     font-weight: normal;
     font-style: normal;
-    src: url('/../fonts/slick.eot');
-    src: url('/../fonts/slick.eot?#iefix') format('embedded-opentype'), url('/../fonts/slick.woff') format('woff'), url('/../fonts/slick.ttf') format('truetype'), url('/../fonts/slick.svg#slick') format('svg');
+    src: url('../fonts/slick.eot');
+    src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'), url('../fonts/slick.woff') format('woff'), url('../fonts/slick.ttf') format('truetype'), url('../fonts/slick.svg#slick') format('svg');
 }
 
 
@@ -25,7 +25,7 @@
     font-size: 0;
     line-height: 0;
     position: absolute;
-    top: 50%;
+    top: 169px;
     display: block;
     width: 20px;
     height: 20px;
@@ -64,16 +64,15 @@
 .slick-prev:before,
 .slick-next:before {
     font-family: 'slick';
-    font-size: 20px;
-    line-height: 1;
-    opacity: .75;
-    color: white;
+    font-size: 25px;
+    color: #0E0848;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-prev {
-    left: -25px;
+    left: 0px;
+    z-index: 999999;
 }
 
 [dir='rtl'] .slick-prev {
@@ -82,15 +81,15 @@
 }
 
 .slick-prev:before {
-    content: '←';
+    content: '❮';
 }
 
 [dir='rtl'] .slick-prev:before {
-    content: '→';
+    content: '❯';
 }
 
 .slick-next {
-    right: -25px;
+    right: 0px;
 }
 
 [dir='rtl'] .slick-next {
@@ -99,11 +98,11 @@
 }
 
 .slick-next:before {
-    content: '→';
+    content: '❯';
 }
 
 [dir='rtl'] .slick-next:before {
-    content: '←';
+    content: '❮';
 }
 
 

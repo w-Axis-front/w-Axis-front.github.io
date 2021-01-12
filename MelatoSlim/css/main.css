@@ -650,6 +650,7 @@ section {
     background: #030303;
     height: 1041px;
     position: relative;
+    width: 100%;
     overflow: hidden
 }
 
@@ -660,8 +661,7 @@ section {
     background: url(../img/png/foo-bg.png) no-repeat;
     background-position: center;
     left: 100px;
-    top: 0;
-    visibility: hidden
+    top: 0
 }
 
 .bot .footer .footer-content {
@@ -740,13 +740,14 @@ section {
 
 .bot .footer .footer-content form {
     margin-top: 60px;
-    position: relative
+    position: relative;
+    width: 100%
 }
 
 .bot .footer .footer-content form input {
-    margin-top: 40px;
     display: block;
-    width: 100%;
+    margin-top: 40px;
+    width: 98.5%;
     border: none;
     border-bottom: 1px solid #7b7b7b;
     background: 0 0;
