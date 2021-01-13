@@ -438,7 +438,8 @@ section {
 }
 .schedule .schedule-img .block-schedule .days {
   color: #000;
-  left: 111px;
+  right: -11px;
+  text-align: right;
   bottom: 29px;
 }
 .schedule .schedule-img .block-schedule .int {
@@ -595,7 +596,6 @@ section {
   padding: 15px 0;
 }
 .bot .time p {
-  width: 287px;
   margin: 0 auto;
   text-align: center;
   font-style: normal;
