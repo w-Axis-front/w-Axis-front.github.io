@@ -559,6 +559,9 @@
   -webkit-animation-name: shake;
   animation-name: shake;
 }
+.animate__shake {
+  --animate-duration: 3s;
+}
 @-webkit-keyframes tada {
   0% {
     -webkit-transform: scaleX(1);
