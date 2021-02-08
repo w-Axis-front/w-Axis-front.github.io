@@ -187,18 +187,25 @@
         <p class="days">2 zilei</p>
       </div>
       <h4>Comanda Liverok</h4>
-      <form class="al-form" action="{action}" method="POST" id="form">
+      <form class="al-form" action="/land/order" method="POST" id="form">
         <select class="al-country" name="country" style="display: none;"></select>
-        <input type="text" name="name" value="" placeholder="Nume" id="name2"/>
-        <label for="name"><span>Nume de tip</span></label>
-        <input type="text" name="phone" value="" placeholder="Telefon" id="phone2"/>
-        <label for="phone"><span>Număr invalid eroare</span></label>
+        <div class="input-wrapper">
+          <input type="text" name="name" placeholder="Nume" id="name2" required/>
+          <label for="name2"></label>
+          <span class="success-checkmark"></span>
+        </div>
+        
+        <div class="input-wrapper">
+          <input type="text" name="phone" placeholder="Telefon" id="phone2" required/>
+          <label for="phone2"></label>
+          <span class="success-checkmark"></span>
+        </div>
         <button class="buy v" type="submit" value="Comanda">Comanda</button>
       </form>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/tl-validator.js?label=false&amp;country=ro"></script>
+    <script src="js/tl-validator.js?label=true&amp;country=ro"></script>
   </body>
 </html>
