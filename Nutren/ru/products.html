@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="/css/main.css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="apple-touch-icon" href="/img/favicon/apple-touch-icon.png" sizes="180x180"/>
+    <link rel="icon" href="/img/favicon/favicon-32x32.png" sizes="32x32" type="image/png"/>
+    <link rel="icon" href="/img/favicon/favicon-16x16.png" sizes="16x16" type="image/png"/>
+    <link rel="manifest" href="/site.webmanifest"/>
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#8bc34a"/>
+    <meta name="msapplication-TileColor" content="#da532c"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet"/>
+    <title>Nutren</title>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav__wrap">
+        <div class="nav__logo-wrap"><a class="nav__logo" href="index.html"><img class="nav__logo-img" src="/img/svg/nav_logo.svg" alt="Nutren logo"/><img class="nav__logo-img-collapsed" src="/img/svg/logo-small.svg" alt="Logo"/></a></div>
+        <div class="nav__wrap-menu"><a class="nav__link" href="index.html">Главная</a><a class="nav__link" href="about.html">О нас</a><a class="nav__link active-page" href="products.html">Продукты</a><a class="nav__link" href="development.html">Разработка</a><a class="button nav__link_anchor" href="#contacts">Контакты</a>
+        </div>
+        <div class="nav__lang"><a class="nav__lang-link" rel="alternate" hreflang="en" href="/">En</a><a class="nav__lang-link active-lang" rel="alternate" hreflang="ru" href="/ru/">Ru</a>
+        </div>
+        <div class="nav__burger"><span class="nav__burger-line"></span></div>
+      </div>
+      <div class="burger-menu" height="100%"><a class="burger-menu__link" href="index.html">Главная</a><a class="burger-menu__link" href="about.html">О нас</a><a class="burger-menu__link active-page" href="products.html">Продукты</a><a class="burger-menu__link" href="development.html">Разработка</a><a class="button nav__link_anchor js_burger-menu-anchor" href="#contacts">Контакты</a>
+        <div>
+          <div class="burger-menu__lang"><a class="burger-menu__lang-link" rel="alternate" hreflang="en" href="/">En</a><a class="burger-menu__lang-link active-lang" rel="alternate" hreflang="ru" href="/ru/">Ru</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="top">
+      <section class="main-slider">
+        <div id="js_main-slider">
+          <div class="main-slider__slide-ostelife main-slider__slide"><img class="main-slider__slide-img1" src="/img/main_slider/ostelife_1.png" alt="Ostelife product example" srcset="/img/main_slider/ostelife_1@2x.png 2x"/><img class="main-slider__slide-img2" src="/img/main_slider/ostelife_2.png" alt="Ostelife" srcset="/img/main_slider/ostelife_2@2x.png 2x"/><img class="main-slider__slide-img3" src="/img/main_slider/ostelife_3.png" alt="Ostelife product" srcset="/img/main_slider/ostelife_3@2x.png 2x"/>
+            <p class="main-slider__slide-bg-text">Ostelife</p>
+            <p class="main-slider__slide-bg-sub main-slider__slide-bg-subtext">Choco Lite</p>
+            <p class="main-slider__slide-bg-sub main-slider__slide-bg-subtext-next">Keto light +</p>
+            <div class="main-slider__slide-content">
+              <h3 class="main-slider__slide-title">Ostelife</h3>
+              <p class="main-slider__slide-text">Натуральный крем для лечения суставов и связок.</p>
+            </div>
+          </div>
+          <div class="main-slider__slide-keto-light main-slider__slide"><img class="main-slider__slide-img1" src="/img/main_slider/keto_1.png" alt="Keto light + product example" srcset="/img/main_slider/keto_1@2x.png 2x"/><img class="main-slider__slide-img2" src="/img/main_slider/keto_2.png" alt="Keto light +" srcset="/img/main_slider/keto_2@2x.png 2x"/><img class="main-slider__slide-img3" src="/img/main_slider/keto_3.png" alt="Keto light + product" srcset="/img/main_slider/keto_3@2x.png 2x"/>
+            <p class="main-slider__slide-bg-text">Keto light +</p>
+            <p class="main-slider__slide-bg-sub main-slider__slide-bg-subtext">Ostelife</p>
+            <p class="main-slider__slide-bg-sub main-slider__slide-bg-subtext-next">Cardio NRJ</p>
+            <div class="main-slider__slide-content">
+              <h3 class="main-slider__slide-title">Keto light +</h3>
+              <p class="main-slider__slide-text">Коктейль-активатор кетоновых тел для похудения.</p>
+            </div>
+          </div>
+          <div class="main-slider__slide-cardio-nrj main-slider__slide"><img class="main-slider__slide-img1" src="/img/main_slider/CardioNRJ_1.png" alt="Cardio NRJ product example" srcset="/img/main_slider/CardioNRJ_1@2x.png 2x"/><img class="main-slider__slide-img2" src="/img/main_slider/CardioNRJ_2.png" alt="Cardio NRJ" srcset="/img/main_slider/CardioNRJ_2@2x.png 2x"/><img class="main-slider__slide-img3" src="/img/main_slider/CardioNRJ_3.png" alt="Cardio NRJ product" srcset="/img/main_slider/CardioNRJ_3@2x.png 2x"/>
+            <p class="main-slider__slide-bg-text">Cardio NRJ</p>
+            <p class="main-slider__slide-bg-sub main-slider__slide-bg-subtext">Keto light +</p>
+            <p class="main-slider__slide-bg-sub main-slider__slide-bg-subtext-next">Varyforte</p>
+            <div class="main-slider__slide-content">
+              <h3 class="main-slider__slide-title">Cardio NRJ</h3>
+              <p class="main-slider__slide-text">Таблетки для профилактики заболеваний сердца.</p>
+            </div>
+          </div>
+          <div class="main-slider__slide-varyforte main-slider__slide"><img class="main-slider__slide-img1" src="/img/main_slider/varyforte_1.png" alt="Varyforte product example" srcset="/img/main_slider/varyforte_1@2x.png 2x"/><img class="main-slider__slide-img2" src="/img/main_slider/varyforte_2.png" alt="Varyforte" srcset="/img/main_slider/varyforte_2@2x.png 2x"/><img class="main-slider__slide-img3" src="/img/main_slider/varyforte_3.png" alt="Varyforte product" srcset="/img/main_slider/varyforte_3@2x.png 2x"/>
+            <p class="main-slider__slide-bg-text">Varyforte</p>
+            <p class="main-slider__slide-bg-sub main-slider__slide-bg-subtext">Cardio NRJ</p>
+            <p class="main-slider__slide-bg-sub main-slider__slide-bg-subtext-next">Choco Lite</p>
+            <div class="main-slider__slide-content">
+              <h3 class="main-slider__slide-title">Varyforte</h3>
+              <p class="main-slider__slide-text">Крем для лечения варикоза без побочных эффектов.</p>
+            </div>
+          </div>
+          <div class="main-slider__slide-choco-lite main-slider__slide"><img class="main-slider__slide-img1" src="/img/main_slider/choco-lite_1.png" alt="Choco Lite product example" srcset="/img/main_slider/choco-lite_1@2x.png 2x"/><img class="main-slider__slide-img2" src="/img/main_slider/choco-lite_2.png" alt="Choco Lite" srcset="/img/main_slider/choco-lite_2@2x.png 2x"/><img class="main-slider__slide-img3" src="/img/main_slider/choco-lite_3.png" alt="Choco Lite product" srcset="/img/main_slider/choco-lite_3@2x.png 2x"/>
+            <p class="main-slider__slide-bg-text">Choco Lite</p>
+            <p class="main-slider__slide-bg-sub main-slider__slide-bg-subtext">Varyforte</p>
+            <p class="main-slider__slide-bg-sub main-slider__slide-bg-subtext-next">Ostelife</p>
+            <div class="main-slider__slide-content">
+              <h3 class="main-slider__slide-title">Choco Lite</h3>
+              <p class="main-slider__slide-text">Энергетический коктейль для похудения со вкусом шоколада.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-products">
+        <div class="container">
+          <div class="js_grid">
+            <div class="grid-sizer"></div>
+            <div class="grid-item main-products__description">
+              <p class="main-products__description-title">Наши продукты</p>
+              <p class="main-products__description-text">Формулы продуктов созданы в нашей собственной лаборатории и защищены патентами. Все средства прошли клинические испытания, имеют доказанную эффективность и сертифицированы для продажи в Китае и Европе.</p>
+            </div>
+                <div class="grid-item js_scroll-animate ostelife"><img class="main-products__item-bg-img" src="/img/products/ostelife-bg.jpg" alt="Ostelife background" srcset="/img/products/ostelife-bg@2x.jpg 2x"/><img class="main-products__item-img undefined" src="/img/products/ostelife.png" alt="Ostelife" srcset="/img/products/ostelife@2x.png 2x"/>
+                  <div class="main-products__item-content">
+                    <p class="main-products__item-title">Ostelife</p>
+                    <p class="main-products__item-text">Крем для лечения и профилактики болезней опорно-двигательного аппарата. Создан на основе натуральных компонентов.</p>
+                  </div>
+                </div>
+                <div class="grid-item js_scroll-animate germixil"><img class="main-products__item-bg-img" src="/img/products/germixil-bg.jpg" alt="Germixil background" srcset="/img/products/germixil-bg@2x.jpg 2x"/><img class="main-products__item-img positioned" src="/img/products/germixil.png" alt="Germixil" srcset="/img/products/germixil@2x.png 2x"/>
+                  <div class="main-products__item-content">
+                    <p class="main-products__item-title">Germixil</p>
+                    <p class="main-products__item-text">Противопаразитарные таблетки мягкого действия с растительными экстрактами. Подходят для лечения и профилактики.</p>
+                  </div>
+                </div>
+                <div class="grid-item js_scroll-animate varyforte"><img class="main-products__item-bg-img" src="/img/products/varyforte-bg.jpg" alt="Varyforte background" srcset="/img/products/varyforte-bg@2x.jpg 2x"/><img class="main-products__item-img undefined" src="/img/products/varyforte.png" alt="Varyforte" srcset="/img/products/varyforte@2x.png 2x"/>
+                  <div class="main-products__item-content">
+                    <p class="main-products__item-title">Varyforte</p>
+                    <p class="main-products__item-text">Крем из растительных ингредиентов для лечения варикоза. Не имеет противопоказаний и побочных эффектов.</p>
+                  </div>
+                </div>
+                <div class="grid-item js_scroll-animate hairactiv"><img class="main-products__item-bg-img" src="/img/products/hairactiv-bg.jpg" alt="HairActiv background" srcset="/img/products/hairactiv-bg@2x.jpg 2x"/><img class="main-products__item-img positioned" src="/img/products/hairactiv.png" alt="HairActiv" srcset="/img/products/hairactiv@2x.png 2x"/>
+                  <div class="main-products__item-content">
+                    <p class="main-products__item-title">HairActiv</p>
+                    <p class="main-products__item-text">Таблетки для роста волос, бровей и ресниц. Натуральный состав, сбалансированная формула.</p>
+                  </div>
+                </div>
+                <div class="grid-item js_scroll-animate cardio"><img class="main-products__item-bg-img" src="/img/products/cardio-bg.jpg" alt="Cardio NRJ background" srcset="/img/products/cardio-bg@2x.jpg 2x"/><img class="main-products__item-img undefined" src="/img/products/cardio.png" alt="Cardio NRJ" srcset="/img/products/cardio@2x.png 2x"/>
+                  <div class="main-products__item-content">
+                    <p class="main-products__item-title">Cardio NRJ</p>
+                    <p class="main-products__item-text">Таблетки для укрепления сердечно-сосудистой системы и профилактики заболеваний сердца.</p>
+                  </div>
+                </div>
+                <div class="grid-item js_scroll-animate keto"><img class="main-products__item-bg-img" src="/img/products/keto-bg.jpg" alt="Keto Light+ background" srcset="/img/products/keto-bg@2x.jpg 2x"/><img class="main-products__item-img positioned" src="/img/products/keto.png" alt="Keto Light+" srcset="/img/products/keto@2x.png 2x"/>
+                  <div class="main-products__item-content">
+                    <p class="main-products__item-title">Keto Light+</p>
+                    <p class="main-products__item-text">Коктейль, помогающий запустить естественный процесс похудения за счет активации кетоновых тел.</p>
+                  </div>
+                </div>
+                <div class="grid-item js_scroll-animate choco"><img class="main-products__item-bg-img" src="/img/products/choco-bg.jpg" alt="Choco Lite background" srcset="/img/products/choco-bg@2x.jpg 2x"/><img class="main-products__item-img positioned" src="/img/products/choco.png" alt="Choco Lite" srcset="/img/products/choco@2x.png 2x"/>
+                  <div class="main-products__item-content">
+                    <p class="main-products__item-title">Choco Lite</p>
+                    <p class="main-products__item-text">Энергетический коктейль для похудения со вкусом шоколада. Содержит комплекс витаминов и минералов.</p>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </section>
+      <section class="container" id="contacts">
+        <div class="contacts">
+          <h2 class="header contacts__header">Наши контакты</h2>
+          <div class="contacts__block">
+            <h4 class="contacts__block-header">Nutren</h4>
+            <p class="contacts__block-text">(адрес)</p>
+            <p class="contacts__block-text">(реквизиты)</p><a class="link contacts__block-text contacts__block-link" href="mailto:(@эл.адрес)">(эл.адрес)</a><a class="link contacts__block-text contacts__block-link" href="tel:+380999999999">(телефон)</a>
+            <div class="contacts__social-block"><a class="link contacts__social-link contacts__whatsapp" href="https://api.whatsapp.com/send?phone=&lt;380999999999&gt;"></a><a class="link contacts__social-link contacts__wechat" href="#"></a><a class="link contacts__social-link contacts__viber" href="viber://chat?number=%2B380999999999"></a></div><img class="contacts__img-bg" src="/img/contacts/contacts-bg.png" alt="Background for products" srcset="/img/contacts/contacts-bg@2x.png 2x"/><img class="contacts__img" src="/img/contacts/mobile-screen.gif" alt="Products"/>
+          </div>
+          <form class="contacts__form" action="/#" method="POST">
+            <p class="contacts__form-header">Хотите, чтобы мы сами с вами связались? Напишите нам.</p>
+            <div class="input-block">
+              <input class="input contacts__input-phone" id="phone" placeholder="Телефон / e-mail" type="text" tabindex="1" minlength="3" required="required" name="phone"/>
+              <label class="label" for="phone">Телефон / e-mail</label>
+            </div>
+            <div class="input-block">
+              <textarea class="input contacts__input-massage" id="message" placeholder="Ваше сообщение" tabindex="2" minlength="3" rows="2" required="required" name="message"></textarea>
+              <label class="label" for="message">Ваше сообщение</label>
+            </div>
+            <button class="button contacts__form-btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__block"><a class="footer__logo" href="index.html"><img class="footer__logo-img" src="/img/svg/nav_logo.svg" alt="Logo"/></a>
+          <div class="footer__text-block">
+            <p class="footer__text">© 2016 Great Simple. All rights reserved</p><a class="footer__link" href="/ru/" target="blank">Public offer agreement</a>
+          </div><a class="footer__up-link" href="#top"><span class="footer__up-link-text">Back to the top</span><img class="contacts__up-link-img" src="/img/svg/arrow-up.svg" alt="Up"/></a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/../js/main.js" type="text/javascript"></script>
+  </body>
+</html>
