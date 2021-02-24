@@ -6332,12 +6332,13 @@ __webpack_require__.r(__webpack_exports__);
 function scrollContent() {
   var styleProperties = ["--scrollFirstCard", "--scrollSecondCard", "--scrollThirdCard", "--scrollForthCard", "--scrollFifthCard", "--scrollSixthCard", "--scrollSeventhCard"];
 
-  function animateItemOnScroll(animatedItem, idx, mainSlider, aboutDescription) {
+  function animateItemOnScroll(animatedItem, idx, mainSlider) {
     // if (animatedItem.classList.contains("main-produce__item")) {
-    // if (animatedItem.classList.contains("about__item")) {
-    if (aboutDescription !== undefined && aboutDescription !== null && aboutDescription.length > 0) {
+    if (animatedItem.classList.contains("about__item")) {
+      var aboutDescription = document.querySelector(".about__img");
+      var aboutTitle = document.querySelector(".about__opportunities");
       window.addEventListener("scroll", function () {
-        document.body.style.setProperty(styleProperties[idx], (window.pageYOffset - mainSlider.offsetHeight - aboutDescription.offsetHeight - animatedItem.offsetHeight * idx) / animatedItem.offsetHeight);
+        document.body.style.setProperty(styleProperties[idx], (window.pageYOffset - mainSlider.offsetHeight - aboutDescription.offsetHeight - aboutTitle.offsetHeight - animatedItem.offsetHeight * idx) / animatedItem.offsetHeight);
       }, false);
     } else {
       window.addEventListener("scroll", function () {
@@ -6351,12 +6352,11 @@ function scrollContent() {
       var mainSlider = document.querySelector(".main-slider"); // const descriptionBlock = document.querySelector(".main-products__description");
       // const produceDescription = document.querySelector(".main-produce__description");
 
-      var aboutDescription = document.querySelector(".about__content-block");
       var animatedItems = document.querySelectorAll(".js_scroll-animate");
 
       for (var idx = 0; idx < animatedItems.length; idx++) {
         var animatedItem = animatedItems[idx];
-        animateItemOnScroll(animatedItem, idx, mainSlider, aboutDescription);
+        animateItemOnScroll(animatedItem, idx, mainSlider);
       }
     }
   }
