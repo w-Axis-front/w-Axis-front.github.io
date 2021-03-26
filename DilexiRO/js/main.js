@@ -9830,27 +9830,24 @@ function animateContent() {
   var rotatedBtns = document.querySelectorAll(".js_rotated-btn");
   var accordion = document.getElementById("js_accordion");
 
-  function enterHandler(rotatedBtnPart, btnText, btnStaticPart, btnStaticPartSVG) {
+  function enterHandler(rotatedBtnPart, btnStaticPart, btnStaticPartSVG, btnStaticPartSVGstroke) {
     rotatedBtnPart.css({
       "animation": "none 0s infinite linear"
     });
-    btnText.css({
-      "color": "#000000"
-    });
     btnStaticPartSVG.css({
-      "stroke": "#000000"
+      "fill": "#000000"
     });
     btnStaticPart.css({
       "background-color": "#FFFFFF"
     });
+    btnStaticPartSVGstroke.css({
+      "stroke": "#000000"
+    });
   }
 
-  function leaveHandler(rotatedBtnPart, btnText, btnStaticPart, btnStaticPartSVG, btn) {
+  function leaveHandler(rotatedBtnPart, btnStaticPart, btnStaticPartSVG, btn, btnStaticPartSVGstroke) {
     rotatedBtnPart.css({
       "animation": "rotation 10s infinite linear"
-    });
-    btnText.css({
-      "color": "#FFFFFF"
     });
 
     if (btn.classList.contains("order__gift-button-wrapper")) {
@@ -9864,6 +9861,9 @@ function animateContent() {
     }
 
     btnStaticPartSVG.css({
+      "fill": "#FFFFFF"
+    });
+    btnStaticPartSVGstroke.css({
       "stroke": "#FFFFFF"
     });
   }
@@ -9873,23 +9873,23 @@ function animateContent() {
       var _loop = function _loop(i) {
         var rotatedBtn = $(rotatedBtns[i]);
         var rotatedBtnPart = rotatedBtn.find(".main__button");
-        var btnText = rotatedBtn.find(".main__button-text");
         var btnStaticPart = rotatedBtn.find(".main__button-arrow");
-        var btnStaticPartSVG = rotatedBtn.find(".stroke");
+        var btnStaticPartSVG = rotatedBtn.find(".svg-fill");
+        var btnStaticPartSVGstroke = rotatedBtn.find(".stroke");
 
         if (e.matches) {
           rotatedBtn.on('touchstart', function () {
             // event.preventDefault();
-            enterHandler(rotatedBtnPart, btnText, btnStaticPart, btnStaticPartSVG);
+            enterHandler(rotatedBtnPart, btnStaticPart, btnStaticPartSVG, btnStaticPartSVGstroke);
           });
           rotatedBtn.on('touchend', function () {
-            leaveHandler(rotatedBtnPart, btnText, btnStaticPart, btnStaticPartSVG, rotatedBtns[i]);
+            leaveHandler(rotatedBtnPart, btnStaticPart, btnStaticPartSVG, rotatedBtns[i], btnStaticPartSVGstroke);
           });
           rotatedBtn.mouseenter(function () {
-            enterHandler(rotatedBtnPart, btnText, btnStaticPart, btnStaticPartSVG);
+            enterHandler(rotatedBtnPart, btnStaticPart, btnStaticPartSVG, btnStaticPartSVGstroke);
           });
           rotatedBtn.mouseleave(function () {
-            leaveHandler(rotatedBtnPart, btnText, btnStaticPart, btnStaticPartSVG, rotatedBtns[i]);
+            leaveHandler(rotatedBtnPart, btnStaticPart, btnStaticPartSVG, rotatedBtns[i], btnStaticPartSVGstroke);
           });
         }
       };
@@ -10563,9 +10563,9 @@ __webpack_require__.r(__webpack_exports__);
 function updateStore() {
   //set card prices to store
   _main__WEBPACK_IMPORTED_MODULE_2__["store"].dispatch(Object(_redux_actions__WEBPACK_IMPORTED_MODULE_1__["setPrices"])({
-    price: 23,
-    oldPrice: 109,
-    currency: "€"
+    price: +window.price || 0,
+    oldPrice: +window.oldPrice || 0,
+    currency: window.currency || ""
   })); //set cards to store
 
   var cards = $(".assortment__grid .assortment__card");
@@ -10761,7 +10761,7 @@ function updateStore() {
 
           productRow.append("<div class=\"order__table-column-group\"><div class=\"order__table-column3\"><p><span>".concat(orderCountTitle, ":</span> <span>1</span></p></div><div class=\"order__table-column4\"><p class=\"order__table-column4-content\"><span>").concat(orderSizeTitle, ":</span> <span class=\"js_show-size\"><span class=\"order__table-product-size\">").concat(size ? size : orderSizeTitle.toLowerCase(), "</span> <svg class=\"order__table-arrow-down-img\" width=\"13\" height=\"8\" viewBox=\"0 0 13 8\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path class=\"stroke\" d=\"M1.49264 1.28902L6.44238 6.23877L11.3921 1.28902\" stroke-width=\"2\"></path></svg></span></p><div class=\"order__table-product-sizes-wrapper\"><div class=\"order__table-product-sizes\">").concat(allSizes.reduce(function (a, s) {
             return a + "<p class=\"order__table-product-size-item".concat(s == size ? " active" : "", " js_set-size\">").concat(s, "</p>");
-          }, ""), "</div></div><p class=\"order__no_size-err\">").concat(orderSizeError, "</p></div><div class='order__table-column5'><span>").concat(orderPriceTitle, ":</span> <span>").concat(currency).concat(price, "</span></div></div></div>")); //append delet btn
+          }, ""), "</div></div><p class=\"order__no_size-err\">").concat(orderSizeError, "</p></div><div class='order__table-column5'><span>").concat(orderPriceTitle, ":</span> <span>").concat(price, " ").concat(currency, "</span></div></div></div>")); //append delet btn
 
           productRow.append("<div class='order__table-column6'><div class='order__table-bin-btn js_order-remove'><svg class='order__table-bin-img' width='22' height='25' viewBox='0 0 22 25' fill='none' xmlns='http://www.w3.org/2000/svg'><g id='trash'><rect class='stroke' x='3.89334' y='4.37292' width='13.7502' height='18.877' stroke-width='2'></rect><path class='stroke' d='M0.00762939 4.08069H21.5922' stroke-width='2'></path><path class='stroke' d='M8.08713 8.09106V19.8859' stroke-width='2'></path><path class='stroke' d='M14.3227 3.27302V3.27302C14.3227 2.15574 13.4169 1.25 12.2996 1.25H9.23725C8.11997 1.25 7.21423 2.15574 7.21423 3.27302V3.27302' stroke-width='2'></path><path class='stroke' d='M13.1589 8.09106V19.8859' stroke-width='2'></path></g></svg></div></div>");
           return productRow;
@@ -10772,8 +10772,8 @@ function updateStore() {
       return productsRows;
     }, []);
     totalItemsNode.text(totalItems);
-    totalPriceNode.text(currency + totalItems * oldPrice);
-    totalDiscounrPriceNode.text(currency + totalItems * price);
+    totalPriceNode.text(totalItems * oldPrice + " " + currency);
+    totalDiscounrPriceNode.text(totalItems * price + " " + currency);
     toggleSubmitBtn(totalItems);
 
     if (totalItems > 0) {
