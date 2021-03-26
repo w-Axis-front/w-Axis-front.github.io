@@ -10040,8 +10040,8 @@ function countTime() {
     function step() {
       var dt = Date.now() - expected; // the drift (positive for overshooting)
 
-      if (dt > INTERVAL) {
-        console.log('overshooting'); // something really bad happened. Maybe the browser (tab) was inactive?
+      if (dt > INTERVAL) {// console.log('overshooting');
+        // something really bad happened. Maybe the browser (tab) was inactive?
         // possibly special handling to avoid futile "catch up" run
       }
 
