@@ -10605,6 +10605,7 @@ function updateStore() {
   var totalPriceNode = $(".js__total-promo-price");
   var totalDiscounrPriceNode = $(".js__total-price");
   var formProducts = $("#order-products");
+  var formCount = $("#order-count");
   var orderSubmit = $(".js_order-submit");
   var emptyCartError = $("#order__empty-cart-err"); //get locale texts from DOM =))
 
@@ -10773,6 +10774,7 @@ function updateStore() {
     }, []);
     totalItemsNode.text(totalItems);
     totalPriceNode.text(totalItems * oldPrice + " " + currency);
+    formCount.val(totalItems);
     totalDiscounrPriceNode.text(totalItems * price + " " + currency);
     toggleSubmitBtn(totalItems);
 
