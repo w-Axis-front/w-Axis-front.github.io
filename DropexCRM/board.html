@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="assets/js/plugins/bootstrap-select/css/bootstrap-select.min.css">
 	<link rel="stylesheet" href="assets/js/plugins/datatables/dataTables.bootstrap4.css">
 	<link rel="stylesheet" id="css-main" href="assets/css/codebase.min.css">
-	<title>Shipments</title>
+	<title>Dropex</title>
 </head>
 
 <body>
@@ -871,23 +871,14 @@
 										</button>
 									</div>
 									<div class="dashboard-table-btns__center">
-										<button type="button" class="btn btn-outline-secondary mb-5">
+										<button type="button" class="btn btn-outline-secondary mr-15  mb-5">
 											Change status
 										</button>
-										<button type="button" class="btn btn-danger mr-15  mb-5">
-											<i class="si si-list"></i>
-										</button>
-										<button type="button" class="btn btn-outline-secondary  mb-5">
+										<button type="button" class="btn btn-outline-secondary mr-15  mb-5">
 											Export
 										</button>
-										<button type="button" class="btn btn-danger mr-15  mb-5">
-											<i class="si si-list"></i>
-										</button>
-										<button type="button" class="btn btn-outline-secondary mb-5">
+										<button type="button" class="btn btn-outline-secondary  mb-5">
 											Reports
-										</button>
-										<button type="button" class="btn btn-danger mr-15  mb-5">
-											<i class="si si-list"></i>
 										</button>
 									</div>
 									<div class="dashboard-table-btns__right">
@@ -906,15 +897,9 @@
 									</div>
 								</div>
 								<div class="table-responsive">
-									<table class="table table-bordered table-striped table-vcenter js-dataTable-simple" data-unorderable="[0, 13]" data-sort="1" data-page-length="8">
+									<table class="table table-bordered table-striped table-vcenter js-dataTable-simple" data-unorderable="[12, 13]">
 										<thead>
 											<tr>
-												<th>
-													<label class="css-control css-control-primary css-checkbox">
-														<input type="checkbox" name="select_all" value="1" class="css-control-input js-selection-all">
-														<span class="css-control-indicator"></span>
-													</label>
-												</th>
 												<th class="text-center text-danger">ID</th>
 												<th>Client</th>
 												<th>Tracker</th>
@@ -928,24 +913,18 @@
 												<th>Country</th>
 												<th>Price</th>
 												<th class="text-muted">Item</th>
-												<th></th>
+												<th class="text-muted">Actions</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
-												<td>
-													<label class="css-control css-control-primary css-checkbox">
-														<input type="checkbox" name="selection[]" value="1" class="css-control-input js-selection">
-														<span class="css-control-indicator"></span>
-													</label>
-												</td>
 												<td>1</td>
 												<td><a href="#" class="link-effect">123</a></td>
 												<td>61370977105</td>
 												<td>13443696</td>
 												<td>Speedy</td>
 												<td>Bulgaria</td>
-												<td><span class="badge badge-primary">Tracker Received</span></td>
+												<td><span class="badge badge-warning">Picked and packed</span></td>
 												<td>.</td>
 												<td>Is not sent</td>
 												<td>31.03.2021</td>
@@ -960,9 +939,6 @@
 														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Documents">
 															<i class="si si-docs"></i>
 														</a>
-														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Update">
-															<i class="si si-reload"></i>
-														</a>
 														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">
 															<i class="si si-list"></i>
 														</a>
@@ -976,19 +952,13 @@
 												</td>
 											</tr>
 											<tr>
-												<td>
-													<label class="css-control css-control-primary css-checkbox">
-														<input type="checkbox" name="selection[]" value="2" class="css-control-input js-selection">
-														<span class="css-control-indicator"></span>
-													</label>
-												</td>
 												<td>2</td>
 												<td><a href="#" class="link-effect">124</a></td>
 												<td>61370977105</td>
 												<td>13443696</td>
 												<td>Speedy</td>
 												<td>Bulgaria</td>
-												<td><span class="badge badge-primary">Sent</span></td>
+												<td><span class="badge badge-success">Delivered</span></td>
 												<td>.</td>
 												<td>Is not sent</td>
 												<td>31.03.2021</td>
@@ -1003,9 +973,6 @@
 														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Documents">
 															<i class="si si-docs"></i>
 														</a>
-														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Update">
-															<i class="si si-reload"></i>
-														</a>
 														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">
 															<i class="si si-list"></i>
 														</a>
@@ -1019,19 +986,13 @@
 												</td>
 											</tr>
 											<tr>
-												<td>
-													<label class="css-control css-control-primary css-checkbox">
-														<input type="checkbox" name="selection[]" value="3" class="css-control-input js-selection">
-														<span class="css-control-indicator"></span>
-													</label>
-												</td>
 												<td>3</td>
 												<td><a href="#" class="link-effect">124</a></td>
 												<td>61370977105</td>
 												<td>13443696</td>
 												<td>Speedy</td>
 												<td>Bulgaria</td>
-												<td><span class="badge badge-danger">Deleted</span></td>
+												<td><span class="badge badge-danger">Reject</span></td>
 												<td>.</td>
 												<td>Is not sent</td>
 												<td>31.03.2021</td>
@@ -1046,8 +1007,39 @@
 														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Documents">
 															<i class="si si-docs"></i>
 														</a>
-														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Update">
-															<i class="si si-reload"></i>
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">
+															<i class="si si-list"></i>
+														</a>
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Status history">
+															<i class="si si-bar-chart"></i>
+														</a>
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="History">
+															<i class="si si-clock"></i>
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>4</td>
+												<td><a href="#" class="link-effect">123</a></td>
+												<td>61370977105</td>
+												<td>13443696</td>
+												<td>Speedy</td>
+												<td>Bulgaria</td>
+												<td><span class="badge badge-warning">Picked and packed</span></td>
+												<td>.</td>
+												<td>Is not sent</td>
+												<td>31.03.2021</td>
+												<td>Bulgaria</td>
+												<td><span class="wsnw">218 Лева</span></td>
+												<td class="text-muted text-small">G1003 - Ostaife Premium Plus - 5</td>
+												<td>
+													<div class="btn-group">
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="View">
+															<i class="si si-eye"></i>
+														</a>
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Documents">
+															<i class="si si-docs"></i>
 														</a>
 														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">
 															<i class="si si-list"></i>
@@ -1062,12 +1054,6 @@
 												</td>
 											</tr>
 											<tr>
-												<td>
-													<label class="css-control css-control-primary css-checkbox">
-														<input type="checkbox" name="selection[]" value="5" class="css-control-input js-selection">
-														<span class="css-control-indicator"></span>
-													</label>
-												</td>
 												<td>5</td>
 												<td><a href="#" class="link-effect">124</a></td>
 												<td>61370977105</td>
@@ -1089,9 +1075,6 @@
 														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Documents">
 															<i class="si si-docs"></i>
 														</a>
-														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Update">
-															<i class="si si-reload"></i>
-														</a>
 														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">
 															<i class="si si-list"></i>
 														</a>
@@ -1105,19 +1088,13 @@
 												</td>
 											</tr>
 											<tr>
-												<td>
-													<label class="css-control css-control-primary css-checkbox">
-														<input type="checkbox" name="selection[]" value="6" class="css-control-input js-selection">
-														<span class="css-control-indicator"></span>
-													</label>
-												</td>
 												<td>6</td>
 												<td><a href="#" class="link-effect">124</a></td>
 												<td>61370977105</td>
 												<td>13443696</td>
 												<td>Speedy</td>
 												<td>Bulgaria</td>
-												<td><span class="badge badge-primary">Delivering To The Client</span></td>
+												<td><span class="badge badge-danger">Reject</span></td>
 												<td>.</td>
 												<td>Is not sent</td>
 												<td>31.03.2021</td>
@@ -1132,8 +1109,209 @@
 														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Documents">
 															<i class="si si-docs"></i>
 														</a>
-														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Update">
-															<i class="si si-reload"></i>
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">
+															<i class="si si-list"></i>
+														</a>
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Status history">
+															<i class="si si-bar-chart"></i>
+														</a>
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="History">
+															<i class="si si-clock"></i>
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>7</td>
+												<td><a href="#" class="link-effect">123</a></td>
+												<td>61370977105</td>
+												<td>13443696</td>
+												<td>Speedy</td>
+												<td>Bulgaria</td>
+												<td><span class="badge badge-warning">Picked and packed</span></td>
+												<td>.</td>
+												<td>Is not sent</td>
+												<td>31.03.2021</td>
+												<td>Bulgaria</td>
+												<td><span class="wsnw">218 Лева</span></td>
+												<td class="text-muted text-small">G1003 - Ostaife Premium Plus - 5</td>
+												<td>
+													<div class="btn-group">
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="View">
+															<i class="si si-eye"></i>
+														</a>
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Documents">
+															<i class="si si-docs"></i>
+														</a>
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">
+															<i class="si si-list"></i>
+														</a>
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Status history">
+															<i class="si si-bar-chart"></i>
+														</a>
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="History">
+															<i class="si si-clock"></i>
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>8</td>
+												<td><a href="#" class="link-effect">124</a></td>
+												<td>61370977105</td>
+												<td>13443696</td>
+												<td>Speedy</td>
+												<td>Bulgaria</td>
+												<td><span class="badge badge-success">Delivered</span></td>
+												<td>.</td>
+												<td>Is not sent</td>
+												<td>31.03.2021</td>
+												<td>Bulgaria</td>
+												<td><span class="wsnw">218 Лева</span></td>
+												<td class="text-muted text-small">G1003 - Ostaife Premium Plus - 5</td>
+												<td>
+													<div class="btn-group">
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="View">
+															<i class="si si-eye"></i>
+														</a>
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Documents">
+															<i class="si si-docs"></i>
+														</a>
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">
+															<i class="si si-list"></i>
+														</a>
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Status history">
+															<i class="si si-bar-chart"></i>
+														</a>
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="History">
+															<i class="si si-clock"></i>
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>9</td>
+												<td><a href="#" class="link-effect">124</a></td>
+												<td>61370977105</td>
+												<td>13443696</td>
+												<td>Speedy</td>
+												<td>Bulgaria</td>
+												<td><span class="badge badge-danger">Reject</span></td>
+												<td>.</td>
+												<td>Is not sent</td>
+												<td>31.03.2021</td>
+												<td>Bulgaria</td>
+												<td><span class="wsnw">218 Лева</span></td>
+												<td class="text-muted text-small">G1003 - Ostaife Premium Plus - 5</td>
+												<td>
+													<div class="btn-group">
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="View">
+															<i class="si si-eye"></i>
+														</a>
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Documents">
+															<i class="si si-docs"></i>
+														</a>
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">
+															<i class="si si-list"></i>
+														</a>
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Status history">
+															<i class="si si-bar-chart"></i>
+														</a>
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="History">
+															<i class="si si-clock"></i>
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>10</td>
+												<td><a href="#" class="link-effect">123</a></td>
+												<td>61370977105</td>
+												<td>13443696</td>
+												<td>Speedy</td>
+												<td>Bulgaria</td>
+												<td><span class="badge badge-warning">Picked and packed</span></td>
+												<td>.</td>
+												<td>Is not sent</td>
+												<td>31.03.2021</td>
+												<td>Bulgaria</td>
+												<td><span class="wsnw">218 Лева</span></td>
+												<td class="text-muted text-small">G1003 - Ostaife Premium Plus - 5</td>
+												<td>
+													<div class="btn-group">
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="View">
+															<i class="si si-eye"></i>
+														</a>
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Documents">
+															<i class="si si-docs"></i>
+														</a>
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">
+															<i class="si si-list"></i>
+														</a>
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Status history">
+															<i class="si si-bar-chart"></i>
+														</a>
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="History">
+															<i class="si si-clock"></i>
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>11</td>
+												<td><a href="#" class="link-effect">124</a></td>
+												<td>61370977105</td>
+												<td>13443696</td>
+												<td>Speedy</td>
+												<td>Bulgaria</td>
+												<td><span class="badge badge-success">Delivered</span></td>
+												<td>.</td>
+												<td>Is not sent</td>
+												<td>31.03.2021</td>
+												<td>Bulgaria</td>
+												<td><span class="wsnw">218 Лева</span></td>
+												<td class="text-muted text-small">G1003 - Ostaife Premium Plus - 5</td>
+												<td>
+													<div class="btn-group">
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="View">
+															<i class="si si-eye"></i>
+														</a>
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Documents">
+															<i class="si si-docs"></i>
+														</a>
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">
+															<i class="si si-list"></i>
+														</a>
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Status history">
+															<i class="si si-bar-chart"></i>
+														</a>
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="History">
+															<i class="si si-clock"></i>
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>12</td>
+												<td><a href="#" class="link-effect">124</a></td>
+												<td>61370977105</td>
+												<td>13443696</td>
+												<td>Speedy</td>
+												<td>Bulgaria</td>
+												<td><span class="badge badge-danger">Reject</span></td>
+												<td>.</td>
+												<td>Is not sent</td>
+												<td>31.03.2021</td>
+												<td>Bulgaria</td>
+												<td><span class="wsnw">218 Лева</span></td>
+												<td class="text-muted text-small">G1003 - Ostaife Premium Plus - 5</td>
+												<td>
+													<div class="btn-group">
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="View">
+															<i class="si si-eye"></i>
+														</a>
+														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Documents">
+															<i class="si si-docs"></i>
 														</a>
 														<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">
 															<i class="si si-list"></i>
@@ -1171,6 +1349,7 @@
 	<script src="assets/js/plugins/datatables/dataTables.bootstrap4.min.js"></script>
 	<script src="assets/js/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
 	<!-- Page JS Code -->
+	<script src="assets/js/pages/dashboard.min.js"></script>
 	<script>jQuery(function () { Codebase.helpers(['datepicker']); });</script>
 </body>
 

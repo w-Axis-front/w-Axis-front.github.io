@@ -1,1 +1,648 @@
-<!doctype html><html lang="en"><head>	<meta charset="utf-8">	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	<meta name="robots" content="noindex, nofollow">	<link rel="shortcut icon" href="assets/media/favicons/favicon.png">	<link rel="icon" type="image/png" sizes="192x192" href="assets/media/favicons/favicon-192x192.png">	<link rel="apple-touch-icon" sizes="180x180" href="assets/media/favicons/apple-touch-icon-180x180.png">	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,400i,600,700&display=swap">	<link rel="stylesheet" href="assets/js/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">	<link rel="stylesheet" href="assets/js/plugins/bootstrap-select/css/bootstrap-select.min.css">	<link rel="stylesheet" href="assets/js/plugins/datatables/dataTables.bootstrap4.css">	<link rel="stylesheet" id="css-main" href="assets/css/codebase.min.css">	<title>Dropex</title></head><body>	<div id="page-container" class="sidebar-o enable-page-overlay side-scroll page-header-modern ">		<!-- Sidebar -->		<nav id="sidebar">			<!-- Sidebar Content -->			<div class="sidebar-content sidebar-content--dropex">				<!-- Side Header -->				<div class="content-header content-header-fullrow px-15">					<!-- Normal Mode -->					<div class="content-header-section text-center align-parent sidebar-mini-hidden">						<!-- Close Sidebar, Visible only on mobile screens -->						<!-- Layout API, functionality initialized in Template._uiApiLayout() -->						<button type="button" class="btn btn-circle btn-dual-secondary d-lg-none align-v-r" data-toggle="layout" data-action="sidebar_close">							<i class="fa fa-times text-danger"></i>						</button>						<!-- END Close Sidebar -->						<!-- Logo -->						<div class="content-header-item">							<a href="">								<img src="assets/media/img/logo.svg" alt="">							</a>						</div>						<!-- END Logo -->					</div>					<!-- END Normal Mode -->				</div>				<!-- END Side Header -->				<!-- Sidebar Scrolling -->				<div class="js-sidebar-scroll">					<!-- Side Navigation -->					<div class="content-side content-side-full">						<ul class="nav-main">							<li class="nav-main-heading text-danger">Menu</li>							<li>								<a href="dashboard.html" class="active"><i class="si si-grid"></i>Home</a>							</li>							<li>								<a href="warehouses.html"><i class="si si-bar-chart"></i>Warehouses</a>							</li>							<li>								<a href="product_list.html"><i class="si si-list"></i>Product List</a>							</li>							<li>								<a href="inbound_delivery.html"><i class="si si-handbag"></i>InBound Delivery</a>							</li>							<li>								<a href="products_in_wh.html"><i class="si si-tag"></i>Products in WH</a>							</li>							<li>								<a href="transfer.html"><i class="si si-shuffle"></i>Transfers</a>							</li>							<li>								<a href="shipments.html"><i class="si si-share-alt"></i>Shipments</a>							</li>							<li>								<a href="check.html"><i class="si si-pencil"></i>Check</a>							</li>							<li>								<a href="packing_list.html"><i class="si si-list"></i>Packing List</a>							</li>							<!-- ADMIN MENU -->							<li class="nav-main-heading text-danger">Admin</li>							<li>								<a href="admin_courier_list.html"><i class="si si-users"></i>Courier list</a>							</li>							<li>								<a href="admin_sku_relations.html"><i class="si si-users"></i>SKU Relations</a>							</li>							<li>								<a href="admin_users.html"><i class="si si-user"></i>Users</a>							</li>							<li>								<a href="admin_user_log.html"><i class="si si-list"></i>User log</a>							</li>							<li>								<a href="admin_pages.html"><i class="si si-book-open"></i>Pages</a>							</li>							<li>								<a href="admin_currency_list.html"><i class="si si-wallet"></i>Currency list</a>							</li>							<!-- END ADMIN MENU -->						</ul>					</div>					<!-- END Side Navigation -->				</div>				<!-- END Sidebar Scrolling -->			</div>			<!-- Sidebar Content -->		</nav>		<!-- END Sidebar -->		<!-- Header -->		<header id="page-header">			<!-- Header Content -->			<div class="content-header">					<!-- Left Section -->					<div class="content-header-section">							<!-- Toggle Sidebar -->							<!-- Layout API, functionality initialized in Template._uiApiLayout() -->							<button type="button" class="btn btn-circle btn-dual-secondary" data-toggle="layout"									data-action="sidebar_toggle">									<i class="fa fa-navicon"></i>							</button>							<!-- END Toggle Sidebar -->					</div>					<!-- END Left Section -->					<!-- Right Section -->					<div class="content-header-section" id="mob-header-content">							<!-- Current server time -->							<b class="current-time">2021-05-25 11:27:24 (Europe/Moscow)</b>							<!-- END current server time -->							<!-- User -->							<a href="#" class="btn btn-rounded btn-dual-secondary text-danger">									<i class="si si-user"></i>									<span class="inline-block ml-5">ivandudka@gmail.com</span>							</a>							<!-- END User -->							<!-- Notifications -->							<div class="btn-group" role="group">									<button type="button" class="btn btn-rounded btn-dual-secondary" id="page-header-notifications"											data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">											<i class="fa fa-flag"></i>											<span class="badge badge-primary badge-pill">5</span>									</button>									<div class="dropdown-menu dropdown-menu-right min-width-300"											aria-labelledby="page-header-notifications">											<h5 class="h6 text-center py-10 mb-0 border-b text-uppercase">Notifications</h5>											<ul class="list-unstyled my-20">													<li>															<a class="text-body-color-dark media mb-15" href="javascript:void(0)">																	<div class="ml-5 mr-15">																			<i class="fa fa-fw fa-check text-success"></i>																	</div>																	<div class="media-body pr-10">																			<p class="mb-0">You’ve upgraded to a VIP account successfully!</p>																			<div class="text-muted font-size-sm font-italic">15 min ago</div>																	</div>															</a>													</li>													<li>															<a class="text-body-color-dark media mb-15" href="javascript:void(0)">																	<div class="ml-5 mr-15">																			<i class="fa fa-fw fa-exclamation-triangle text-warning"></i>																	</div>																	<div class="media-body pr-10">																			<p class="mb-0">Please check your payment info since we can’t validate them!																			</p>																			<div class="text-muted font-size-sm font-italic">50 min ago</div>																	</div>															</a>													</li>													<li>															<a class="text-body-color-dark media mb-15" href="javascript:void(0)">																	<div class="ml-5 mr-15">																			<i class="fa fa-fw fa-times text-danger"></i>																	</div>																	<div class="media-body pr-10">																			<p class="mb-0">Web server stopped responding and it was automatically																					restarted!</p>																			<div class="text-muted font-size-sm font-italic">4 hours ago</div>																	</div>															</a>													</li>													<li>															<a class="text-body-color-dark media mb-15" href="javascript:void(0)">																	<div class="ml-5 mr-15">																			<i class="fa fa-fw fa-exclamation-triangle text-warning"></i>																	</div>																	<div class="media-body pr-10">																			<p class="mb-0">Please consider upgrading your plan. You are running out of																					space.</p>																			<div class="text-muted font-size-sm font-italic">16 hours ago</div>																	</div>															</a>													</li>													<li>															<a class="text-body-color-dark media mb-15" href="javascript:void(0)">																	<div class="ml-5 mr-15">																			<i class="fa fa-fw fa-plus text-primary"></i>																	</div>																	<div class="media-body pr-10">																			<p class="mb-0">New purchases! +$250</p>																			<div class="text-muted font-size-sm font-italic">1 day ago</div>																	</div>															</a>													</li>											</ul>											<div class="dropdown-divider"></div>											<a class="dropdown-item text-center mb-0" href="javascript:void(0)">													<i class="fa fa-flag mr-5"></i> View All											</a>									</div>							</div>							<!-- END Notifications -->							<!-- LOGOUT -->							<a href="#" class="btn btn-rounded btn-dual-secondary">									<i class="si si-logout"></i>									<span class="inline-block ml-5">Sign Out</span>							</a>							<!-- END LOGOUT -->					</div>					<!-- END Right Section -->					<!-- Toggle Header Modile -->					<!-- Layout API, functionality initialized in HeaderMobDropdown.js -->					<div class="btn-group d-lg-none zi-2" role="group">						<button type="button" class="btn btn-rounded btn-dual-secondary" id="mob-header-content-btn">								<i class="fa fa-tasks"></i>						</button>					</div>					<!-- END Toggle Header Modile -->			</div>			<!-- END Header Content -->			<!-- Header Loader -->			<!-- Please check out the Activity page under Elements category to see examples of showing/hiding it -->			<div id="page-header-loader" class="overlay-header bg-primary">					<div class="content-header content-header-fullrow text-center">							<div class="content-header-item">									<i class="fa fa-sun-o fa-spin text-white"></i>							</div>					</div>			</div>			<!-- END Header Loader -->		</header>		<!-- END Header -->		<!-- Main Container -->		<main id="main-container">			<!-- Page Content -->			<div class="content">				<div class="row">					<div class="col-12">						<div class="block">							<div class="block-content block-content-full block-pattern">								<div class="row mb-30">									<div class="col-lg-7 col-md-12">										<form class="form-inline" action="/" method="post">											<select class="form-control col-sm-7 col-12 mb-2 mr-sm-2 mb-sm-0 selectpicker" multiple data-actions-box="true" data-live-search="true" data-style="custom-bs-select" data-none-selected-text="Select client id" name="CreateForm[user_id]" required>												<option value="25">25 - GORODOK-TRANS SRL</option>												<option value="39">39 - NEWSALETRADE SP. Z O.O</option>												<option value="47">47 - Client</option>												<option value="48">48 - “BH GROUP 13“ LTD</option>												<option value="52">52 - HHL SP.ZO.O.</option>												<option value="81">81 - Cloud Horizons KFT</option>												<option value="100">100 - Esenz s.r.o.</option>												<option value="105">105 - Cloud Horizons KFT</option>												<option value="120">120 - EUROPE INNOVATION GROUP SPÓŁKA Z OGRANICZONĄ													ODPOWIEDZIALNOŚCIĄ SK</option>												<option value="132">132 - Hemcpaul, UAB</option>												<option value="133">133 - PACK ECO TRADE S.R.L.</option>												<option value="134">134 - PACK ECO TRADE S.R.L.</option>												<option value="144">144 - Monadon d.o.o</option>												<option value="151">151 - Deni Tehnik LTD</option>												<option value="159">159 - SEPORA TRADING LTD</option>												<option value="165">165 - MB " Laumis"</option>												<option value="178">178 - Fountain Of Truth Spring Water</option>												<option value="179">179 - Esenz s.r.o.</option>												<option value="172">172 - Vivabelle</option>												<option value="182">182 - OVTECH LP</option>												<option value="188">188 - Neoskin</option>											</select>											<button type="submit" class="btn btn-danger min-width-125">Create												transfer</button>										</form>									</div>								</div>								<div class="row">									<div class="col">										<div class="table-responsive">											<table class="table table-bordered table-striped table-vcenter js-dataTable-simple" data-filter="true" data-unorderable="[8]" data-searching="true" data-fixed-header="true" data-order-cells-top="true">												<thead>													<tr>														<th data-filter-type="input" class="text-center text-danger">ID														</th>														<th data-filter-type="input" style="width: 130px">Date</th>														<th data-filter-type="input">Name</th>														<th data-filter-type="input">Client</th>														<th data-filter-type="select">Sender Warehouse</th>														<th data-filter-type="select">Recipient Warehouse</th>														<th data-filter-type="select">Recipient Type</th>														<th data-filter-type="select">Status</th>														<th></th>													</tr>												</thead>												<tbody>													<tr>														<td>1</td>														<td>28-08-2019</td>														<td>Тестовый трансфер</td>														<td><a href="#" class="link-effect"> 3</a></td>														<td>Poland</td>														<td>Испания</td>														<td><span class="badge badge-primary">To WH</span></td>														<td><span class="badge badge-info">Accepted by WH</span></td>														<td>															<div class="btn-group">																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="View">																	<i class="si si-eye"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">																	<i class="si si-list"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Status history">																	<i class="si si-bar-chart"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Print packing list">																	<i class="si si-printer"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="History">																	<i class="si si-book-open"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Rollback">																	<i class="si si-loop"></i>																</a>															</div>														</td>													</tr>													<tr>														<td>2</td>														<td>14-08-2019</td>														<td>трасфер 1</td>														<td><a href="#" class="link-effect"> 12</a></td>														<td>Poland</td>														<td>Испания</td>														<td><span class="badge badge-primary">To WH</span></td>														<td><span class="badge badge-info">Accepted by WH</span></td>														<td>															<div class="btn-group">																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="View">																	<i class="si si-eye"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">																	<i class="si si-list"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Status history">																	<i class="si si-bar-chart"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Print packing list">																	<i class="si si-printer"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="History">																	<i class="si si-book-open"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Rollback">																	<i class="si si-loop"></i>																</a>															</div>														</td>													</tr>													<tr>														<td>3</td>														<td>12-12-2019</td>														<td>Test transfer from Hungary2 to Hungary</td>														<td><a href="#" class="link-effect"> 20</a></td>														<td>Hungary 2</td>														<td>Hungary</td>														<td><span class="badge badge-primary">To WH</span></td>														<td><span class="badge badge-info">Accepted by WH</span></td>														<td>															<div class="btn-group">																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="View">																	<i class="si si-eye"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">																	<i class="si si-list"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Status history">																	<i class="si si-bar-chart"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Print packing list">																	<i class="si si-printer"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="History">																	<i class="si si-book-open"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Rollback">																	<i class="si si-loop"></i>																</a>															</div>														</td>													</tr>													<tr>														<td>4</td>														<td>11-06-2020</td>														<td>test</td>														<td><a href="#" class="link-effect"> 39</a></td>														<td>Hungary</td>														<td>Italia Milan</td>														<td><span class="badge badge-primary">To WH</span></td>														<td><span class="badge badge-danger">Canceled</span></td>														<td>															<div class="btn-group">																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="View">																	<i class="si si-eye"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">																	<i class="si si-list"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Status history">																	<i class="si si-bar-chart"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Print packing list">																	<i class="si si-printer"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="History">																	<i class="si si-book-open"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Rollback">																	<i class="si si-loop"></i>																</a>															</div>														</td>													</tr>													<tr>														<td>5</td>														<td>21-07-2020</td>														<td>Test name transfer</td>														<td><a href="#" class="link-effect">25</a></td>														<td>Hungary</td>														<td><span class="badge badge-warning">To address</span></td>														<td><span class="badge badge-warning">To address</span></td>														<td><span class="badge badge-danger">Canceled</span></td>														<td>															<div class="btn-group">																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="View">																	<i class="si si-eye"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">																	<i class="si si-list"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Status history">																	<i class="si si-bar-chart"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Print packing list">																	<i class="si si-printer"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="History">																	<i class="si si-book-open"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Rollback">																	<i class="si si-loop"></i>																</a>															</div>														</td>													</tr>													<tr>														<td>6</td>														<td>18-06-2020</td>														<td>test</td>														<td><a href="#" class="link-effect">47</a></td>														<td>Hungary</td>														<td>Italia Milan</td>														<td><span class="badge badge-primary">To WH</span></td>														<td><span class="badge badge-info">Accepted by WH</span></td>														<td>															<div class="btn-group">																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="View">																	<i class="si si-eye"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">																	<i class="si si-list"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Status history">																	<i class="si si-bar-chart"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Print packing list">																	<i class="si si-printer"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="History">																	<i class="si si-book-open"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Rollback">																	<i class="si si-loop"></i>																</a>															</div>														</td>													</tr>													<tr>														<td>7</td>														<td>25-07-2020</td>														<td>Test 240720</td>														<td><a href="#" class="link-effect">52</a></td>														<td>Romania Deva</td>														<td><span class="badge badge-warning">To address</span></td>														<td><span class="badge badge-warning">To address</span></td>														<td><span class="badge badge-success">Prepared For																Shipping</span></td>														<td>															<div class="btn-group">																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="View">																	<i class="si si-eye"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">																	<i class="si si-list"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Status history">																	<i class="si si-bar-chart"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Print packing list">																	<i class="si si-printer"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="History">																	<i class="si si-book-open"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Rollback">																	<i class="si si-loop"></i>																</a>															</div>														</td>													</tr>													<tr>														<td>8</td>														<td>07-08-2020</td>														<td>Test 040820</td>														<td><a href="#" class="link-effect">39</a></td>														<td>Hungary</td>														<td><span class="badge badge-warning">To address</span></td>														<td><span class="badge badge-warning">To address</span></td>														<td><span class="badge badge-success">Shipped</span></td>														<td>															<div class="btn-group">																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="View">																	<i class="si si-eye"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">																	<i class="si si-list"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Status history">																	<i class="si si-bar-chart"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Print packing list">																	<i class="si si-printer"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="History">																	<i class="si si-book-open"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Rollback">																	<i class="si si-loop"></i>																</a>															</div>														</td>													</tr>													<tr>														<td>9</td>														<td>11-09-2020</td>														<td>Перемещение: Mammax (15 capsules) 300;</td>														<td><a href="#" class="link-effect">39</a></td>														<td>Hungary</td>														<td><span class="badge badge-warning">To address</span></td>														<td><span class="badge badge-warning">To address</span></td>														<td><span class="badge badge-success">Shipped</span></td>														<td>															<div class="btn-group">																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="View">																	<i class="si si-eye"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">																	<i class="si si-list"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Status history">																	<i class="si si-bar-chart"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Print packing list">																	<i class="si si-printer"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="History">																	<i class="si si-book-open"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Rollback">																	<i class="si si-loop"></i>																</a>															</div>														</td>													</tr>													<tr>														<td>10</td>														<td>11-09-2020</td>														<td>test</td>														<td><a href="#" class="link-effect">39</a></td>														<td>Hungary</td>														<td>Italia Milan</td>														<td><span class="badge badge-primary">To WH</span></td>														<td><span class="badge badge-info">Accepted by WH</span></td>														<td>															<div class="btn-group">																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="View">																	<i class="si si-eye"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">																	<i class="si si-list"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Status history">																	<i class="si si-bar-chart"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Print packing list">																	<i class="si si-printer"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="History">																	<i class="si si-book-open"></i>																</a>																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Rollback">																	<i class="si si-loop"></i>																</a>															</div>														</td>													</tr>												</tbody>											</table>										</div>									</div>								</div>								<!-- /.row -->							</div>						</div>						<!-- ./block -->					</div>					<!-- ./col-12 -->				</div>				<!-- ./row -->			</div>			<!-- END Page Content -->		</main>		<!-- END Main Container -->	</div>	<!-- END Page Container -->	<script src="assets/js/codebase.core.min.js"></script>	<script src="assets/js/codebase.app.min.js"></script>	<script src="assets/js/plugins/datatables/jquery.dataTables.min.js"></script>	<script src="assets/js/plugins/bootstrap-select/js/bootstrap-select.min.js"></script>	<script src="assets/js/plugins/datatables/dataTables.bootstrap4.min.js"></script>	<script src="assets/js/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>	<!-- Page JS Code -->	<script>jQuery(function () { Codebase.helpers(['datepicker']); });</script></body></html>
+<!doctype html>board.html
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta name="robots" content="noindex, nofollow">
+	<link rel="shortcut icon" href="assets/media/favicons/favicon.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="assets/media/favicons/favicon-192x192.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/media/favicons/apple-touch-icon-180x180.png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,400i,600,700&display=swap">
+	<link rel="stylesheet" href="assets/js/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
+	<link rel="stylesheet" href="assets/js/plugins/bootstrap-select/css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="assets/js/plugins/datatables/dataTables.bootstrap4.css">
+	<link rel="stylesheet" id="css-main" href="assets/css/codebase.min.css">
+	<title>Dropex</title>
+</head>
+
+<body>
+	<div id="page-container" class="sidebar-o enable-page-overlay side-scroll page-header-modern ">
+		<!-- Sidebar -->
+		<nav id="sidebar">
+			<!-- Sidebar Content -->
+			<div class="sidebar-content sidebar-content--dropex">
+				<!-- Side Header -->
+				<div class="content-header content-header-fullrow px-15">
+					<!-- Normal Mode -->
+					<div class="content-header-section text-center align-parent sidebar-mini-hidden">
+						<!-- Close Sidebar, Visible only on mobile screens -->
+						<!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+						<button type="button" class="btn btn-circle btn-dual-secondary d-lg-none align-v-r" data-toggle="layout" data-action="sidebar_close">
+							<i class="fa fa-times text-danger"></i>
+						</button>
+						<!-- END Close Sidebar -->
+						<!-- Logo -->
+						<div class="content-header-item">
+							<a href="">
+								<img src="assets/media/img/logo.svg" alt="">
+							</a>
+						</div>
+						<!-- END Logo -->
+					</div>
+					<!-- END Normal Mode -->
+				</div>
+				<!-- END Side Header -->
+				<!-- Sidebar Scrolling -->
+				<div class="js-sidebar-scroll">
+					<!-- Side Navigation -->
+					<div class="content-side content-side-full">
+						<ul class="nav-main">
+							<li class="nav-main-heading text-danger">Menu</li>
+							<li>
+								<a href="dashboard.html" class="active"><i class="si si-grid"></i>Home</a>
+							</li>
+							<li>
+								<a href="warehouses.html"><i class="si si-bar-chart"></i>Warehouses</a>
+							</li>
+							<li>
+								<a href="product_list.html"><i class="si si-list"></i>Product List</a>
+							</li>
+							<li>
+								<a href="inbound_delivery.html"><i class="si si-handbag"></i>InBound Delivery</a>
+							</li>
+							<li>
+								<a href="products_in_wh.html"><i class="si si-tag"></i>Products in WH</a>
+							</li>
+							<li>
+								<a href="transfer.html"><i class="si si-shuffle"></i>Transfers</a>
+							</li>
+							<li>
+								<a href="shipments.html"><i class="si si-share-alt"></i>Shipments</a>
+							</li>
+							<li>
+								<a href="check.html"><i class="si si-pencil"></i>Check</a>
+							</li>
+							<li>
+								<a href="packing_list.html"><i class="si si-list"></i>Packing List</a>
+							</li>
+							<!-- ADMIN MENU -->
+							<li class="nav-main-heading text-danger">Admin</li>
+							<li>
+								<a href="admin_courier_list.html"><i class="si si-users"></i>Courier list</a>
+							</li>
+							<li>
+								<a href="admin_sku_relations.html"><i class="si si-users"></i>SKU Relations</a>
+							</li>
+							<li>
+								<a href="admin_users.html"><i class="si si-user"></i>Users</a>
+							</li>
+							<li>
+								<a href="admin_user_log.html"><i class="si si-list"></i>User log</a>
+							</li>
+							<li>
+								<a href="admin_pages.html"><i class="si si-book-open"></i>Pages</a>
+							</li>
+							<li>
+								<a href="admin_currency_list.html"><i class="si si-wallet"></i>Currency list</a>
+							</li>
+							<!-- END ADMIN MENU -->
+						</ul>
+					</div>
+					<!-- END Side Navigation -->
+				</div>
+				<!-- END Sidebar Scrolling -->
+			</div>
+			<!-- Sidebar Content -->
+		</nav>
+		<!-- END Sidebar -->
+		<!-- Header -->
+		<header id="page-header">
+			<!-- Header Content -->
+			<div class="content-header">
+				<!-- Left Section -->
+				<div class="content-header-section">
+					<!-- Toggle Sidebar -->
+					<!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+					<button type="button" class="btn btn-circle btn-dual-secondary" data-toggle="layout" data-action="sidebar_toggle">
+						<i class="fa fa-navicon"></i>
+					</button>
+					<!-- END Toggle Sidebar -->
+				</div>
+				<!-- END Left Section -->
+				<!-- Right Section -->
+				<div class="content-header-section" id="mob-header-content">
+					<!-- Current server time -->
+					<b class="current-time">2021-05-25 11:27:24 (Europe/Moscow)</b>
+					<!-- END current server time -->
+					<!-- User -->
+					<a href="#" class="btn btn-rounded btn-dual-secondary text-danger">
+						<i class="si si-user"></i>
+						<span class="inline-block ml-5">ivandudka@gmail.com</span>
+					</a>
+					<!-- END User -->
+					<!-- Notifications -->
+					<div class="btn-group" role="group">
+						<button type="button" class="btn btn-rounded btn-dual-secondary" id="page-header-notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-flag"></i>
+							<span class="badge badge-primary badge-pill">5</span>
+						</button>
+						<div class="dropdown-menu dropdown-menu-right min-width-300" aria-labelledby="page-header-notifications">
+							<h5 class="h6 text-center py-10 mb-0 border-b text-uppercase">Notifications</h5>
+							<ul class="list-unstyled my-20">
+								<li>
+									<a class="text-body-color-dark media mb-15" href="javascript:void(0)">
+										<div class="ml-5 mr-15">
+											<i class="fa fa-fw fa-check text-success"></i>
+										</div>
+										<div class="media-body pr-10">
+											<p class="mb-0">You’ve upgraded to a VIP account successfully!</p>
+											<div class="text-muted font-size-sm font-italic">15 min ago</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a class="text-body-color-dark media mb-15" href="javascript:void(0)">
+										<div class="ml-5 mr-15">
+											<i class="fa fa-fw fa-exclamation-triangle text-warning"></i>
+										</div>
+										<div class="media-body pr-10">
+											<p class="mb-0">Please check your payment info since we can’t validate them!
+											</p>
+											<div class="text-muted font-size-sm font-italic">50 min ago</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a class="text-body-color-dark media mb-15" href="javascript:void(0)">
+										<div class="ml-5 mr-15">
+											<i class="fa fa-fw fa-times text-danger"></i>
+										</div>
+										<div class="media-body pr-10">
+											<p class="mb-0">Web server stopped responding and it was automatically
+												restarted!</p>
+											<div class="text-muted font-size-sm font-italic">4 hours ago</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a class="text-body-color-dark media mb-15" href="javascript:void(0)">
+										<div class="ml-5 mr-15">
+											<i class="fa fa-fw fa-exclamation-triangle text-warning"></i>
+										</div>
+										<div class="media-body pr-10">
+											<p class="mb-0">Please consider upgrading your plan. You are running out of
+												space.</p>
+											<div class="text-muted font-size-sm font-italic">16 hours ago</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a class="text-body-color-dark media mb-15" href="javascript:void(0)">
+										<div class="ml-5 mr-15">
+											<i class="fa fa-fw fa-plus text-primary"></i>
+										</div>
+										<div class="media-body pr-10">
+											<p class="mb-0">New purchases! +$250</p>
+											<div class="text-muted font-size-sm font-italic">1 day ago</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item text-center mb-0" href="javascript:void(0)">
+								<i class="fa fa-flag mr-5"></i> View All
+							</a>
+						</div>
+					</div>
+					<!-- END Notifications -->
+					<!-- LOGOUT -->
+					<a href="#" class="btn btn-rounded btn-dual-secondary">
+						<i class="si si-logout"></i>
+						<span class="inline-block ml-5">Sign Out</span>
+					</a>
+					<!-- END LOGOUT -->
+				</div>
+				<!-- END Right Section -->
+				<!-- Toggle Header Modile -->
+				<!-- Layout API, functionality initialized in HeaderMobDropdown.js -->
+				<div class="btn-group d-lg-none zi-2" role="group">
+					<button type="button" class="btn btn-rounded btn-dual-secondary" id="mob-header-content-btn">
+						<i class="fa fa-tasks"></i>
+					</button>
+				</div>
+				<!-- END Toggle Header Modile -->
+			</div>
+			<!-- END Header Content -->
+			<!-- Header Loader -->
+			<!-- Please check out the Activity page under Elements category to see examples of showing/hiding it -->
+			<div id="page-header-loader" class="overlay-header bg-primary">
+				<div class="content-header content-header-fullrow text-center">
+					<div class="content-header-item">
+						<i class="fa fa-sun-o fa-spin text-white"></i>
+					</div>
+				</div>
+			</div>
+			<!-- END Header Loader -->
+		</header>
+		<!-- END Header -->
+		<!-- Main Container -->
+		<main id="main-container">
+			<!-- Page Content -->
+			<div class="content">
+				<div class="row">
+					<div class="col-12">
+						<div class="block">
+							<div class="block-content block-content-full block-pattern">
+								<div class="row mb-30">
+									<div class="col-lg-7 col-md-12">
+										<form class="form-inline" action="/" method="post">
+											<select class="form-control col-sm-7 col-12 mb-2 mr-sm-2 mb-sm-0 selectpicker" multiple data-actions-box="true" data-live-search="true" data-style="custom-bs-select" data-none-selected-text="Select client id" name="CreateForm[user_id]" required>
+												<option value="25">25 - GORODOK-TRANS SRL</option>
+												<option value="39">39 - NEWSALETRADE SP. Z O.O</option>
+												<option value="47">47 - Client</option>
+												<option value="48">48 - “BH GROUP 13“ LTD</option>
+												<option value="52">52 - HHL SP.ZO.O.</option>
+												<option value="81">81 - Cloud Horizons KFT</option>
+												<option value="100">100 - Esenz s.r.o.</option>
+												<option value="105">105 - Cloud Horizons KFT</option>
+												<option value="120">120 - EUROPE INNOVATION GROUP SPÓŁKA Z OGRANICZONĄ
+													ODPOWIEDZIALNOŚCIĄ SK</option>
+												<option value="132">132 - Hemcpaul, UAB</option>
+												<option value="133">133 - PACK ECO TRADE S.R.L.</option>
+												<option value="134">134 - PACK ECO TRADE S.R.L.</option>
+												<option value="144">144 - Monadon d.o.o</option>
+												<option value="151">151 - Deni Tehnik LTD</option>
+												<option value="159">159 - SEPORA TRADING LTD</option>
+												<option value="165">165 - MB " Laumis"</option>
+												<option value="178">178 - Fountain Of Truth Spring Water</option>
+												<option value="179">179 - Esenz s.r.o.</option>
+												<option value="172">172 - Vivabelle</option>
+												<option value="182">182 - OVTECH LP</option>
+												<option value="188">188 - Neoskin</option>
+											</select>
+											<button type="submit" class="btn btn-danger min-width-125">Create
+												transfer</button>
+										</form>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col">
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped table-vcenter js-dataTable-simple" data-filter="true" data-unorderable="[8]" data-searching="true" data-fixed-header="true" data-order-cells-top="true">
+												<thead>
+													<tr>
+														<th data-filter-type="input" class="text-center text-danger">ID
+														</th>
+														<th data-filter-type="input" style="width: 130px">Date</th>
+														<th data-filter-type="input">Name</th>
+														<th data-filter-type="input">Client</th>
+														<th data-filter-type="select">Sender Warehouse</th>
+														<th data-filter-type="select">Recipient Warehouse</th>
+														<th data-filter-type="select">Recipient Type</th>
+														<th data-filter-type="select">Status</th>
+														<th></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>1</td>
+														<td>28-08-2019</td>
+														<td>Тестовый трансфер</td>
+														<td><a href="#" class="link-effect"> 3</a></td>
+														<td>Poland</td>
+														<td>Испания</td>
+														<td><span class="badge badge-primary">To WH</span></td>
+														<td><span class="badge badge-info">Accepted by WH</span></td>
+														<td>
+															<div class="btn-group">
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="View">
+																	<i class="si si-eye"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">
+																	<i class="si si-list"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Status history">
+																	<i class="si si-bar-chart"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Print packing list">
+																	<i class="si si-printer"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="History">
+																	<i class="si si-book-open"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Rollback">
+																	<i class="si si-loop"></i>
+																</a>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td>2</td>
+														<td>14-08-2019</td>
+														<td>трасфер 1</td>
+														<td><a href="#" class="link-effect"> 12</a></td>
+														<td>Poland</td>
+														<td>Испания</td>
+														<td><span class="badge badge-primary">To WH</span></td>
+														<td><span class="badge badge-info">Accepted by WH</span></td>
+														<td>
+															<div class="btn-group">
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="View">
+																	<i class="si si-eye"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">
+																	<i class="si si-list"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Status history">
+																	<i class="si si-bar-chart"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Print packing list">
+																	<i class="si si-printer"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="History">
+																	<i class="si si-book-open"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Rollback">
+																	<i class="si si-loop"></i>
+																</a>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td>3</td>
+														<td>12-12-2019</td>
+														<td>Test transfer from Hungary2 to Hungary</td>
+														<td><a href="#" class="link-effect"> 20</a></td>
+														<td>Hungary 2</td>
+														<td>Hungary</td>
+														<td><span class="badge badge-primary">To WH</span></td>
+														<td><span class="badge badge-info">Accepted by WH</span></td>
+														<td>
+															<div class="btn-group">
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="View">
+																	<i class="si si-eye"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">
+																	<i class="si si-list"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Status history">
+																	<i class="si si-bar-chart"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Print packing list">
+																	<i class="si si-printer"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="History">
+																	<i class="si si-book-open"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Rollback">
+																	<i class="si si-loop"></i>
+																</a>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td>4</td>
+														<td>11-06-2020</td>
+														<td>test</td>
+														<td><a href="#" class="link-effect"> 39</a></td>
+														<td>Hungary</td>
+														<td>Italia Milan</td>
+														<td><span class="badge badge-primary">To WH</span></td>
+														<td><span class="badge badge-danger">Canceled</span></td>
+														<td>
+															<div class="btn-group">
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="View">
+																	<i class="si si-eye"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">
+																	<i class="si si-list"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Status history">
+																	<i class="si si-bar-chart"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Print packing list">
+																	<i class="si si-printer"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="History">
+																	<i class="si si-book-open"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Rollback">
+																	<i class="si si-loop"></i>
+																</a>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td>5</td>
+														<td>21-07-2020</td>
+														<td>Test name transfer</td>
+														<td><a href="#" class="link-effect">25</a></td>
+														<td>Hungary</td>
+														<td><span class="badge badge-warning">To address</span></td>
+														<td><span class="badge badge-warning">To address</span></td>
+														<td><span class="badge badge-danger">Canceled</span></td>
+														<td>
+															<div class="btn-group">
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="View">
+																	<i class="si si-eye"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">
+																	<i class="si si-list"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Status history">
+																	<i class="si si-bar-chart"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Print packing list">
+																	<i class="si si-printer"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="History">
+																	<i class="si si-book-open"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Rollback">
+																	<i class="si si-loop"></i>
+																</a>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td>6</td>
+														<td>18-06-2020</td>
+														<td>test</td>
+														<td><a href="#" class="link-effect">47</a></td>
+														<td>Hungary</td>
+														<td>Italia Milan</td>
+														<td><span class="badge badge-primary">To WH</span></td>
+														<td><span class="badge badge-info">Accepted by WH</span></td>
+														<td>
+															<div class="btn-group">
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="View">
+																	<i class="si si-eye"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">
+																	<i class="si si-list"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Status history">
+																	<i class="si si-bar-chart"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Print packing list">
+																	<i class="si si-printer"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="History">
+																	<i class="si si-book-open"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Rollback">
+																	<i class="si si-loop"></i>
+																</a>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td>7</td>
+														<td>25-07-2020</td>
+														<td>Test 240720</td>
+														<td><a href="#" class="link-effect">52</a></td>
+														<td>Romania Deva</td>
+														<td><span class="badge badge-warning">To address</span></td>
+														<td><span class="badge badge-warning">To address</span></td>
+														<td><span class="badge badge-success">Prepared For
+																Shipping</span></td>
+														<td>
+															<div class="btn-group">
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="View">
+																	<i class="si si-eye"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">
+																	<i class="si si-list"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Status history">
+																	<i class="si si-bar-chart"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Print packing list">
+																	<i class="si si-printer"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="History">
+																	<i class="si si-book-open"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Rollback">
+																	<i class="si si-loop"></i>
+																</a>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td>8</td>
+														<td>07-08-2020</td>
+														<td>Test 040820</td>
+														<td><a href="#" class="link-effect">39</a></td>
+														<td>Hungary</td>
+														<td><span class="badge badge-warning">To address</span></td>
+														<td><span class="badge badge-warning">To address</span></td>
+														<td><span class="badge badge-success">Shipped</span></td>
+														<td>
+															<div class="btn-group">
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="View">
+																	<i class="si si-eye"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">
+																	<i class="si si-list"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Status history">
+																	<i class="si si-bar-chart"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Print packing list">
+																	<i class="si si-printer"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="History">
+																	<i class="si si-book-open"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Rollback">
+																	<i class="si si-loop"></i>
+																</a>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td>9</td>
+														<td>11-09-2020</td>
+														<td>Перемещение: Mammax (15 capsules) 300;</td>
+														<td><a href="#" class="link-effect">39</a></td>
+														<td>Hungary</td>
+														<td><span class="badge badge-warning">To address</span></td>
+														<td><span class="badge badge-warning">To address</span></td>
+														<td><span class="badge badge-success">Shipped</span></td>
+														<td>
+															<div class="btn-group">
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="View">
+																	<i class="si si-eye"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">
+																	<i class="si si-list"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Status history">
+																	<i class="si si-bar-chart"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Print packing list">
+																	<i class="si si-printer"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="History">
+																	<i class="si si-book-open"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Rollback">
+																	<i class="si si-loop"></i>
+																</a>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td>10</td>
+														<td>11-09-2020</td>
+														<td>test</td>
+														<td><a href="#" class="link-effect">39</a></td>
+														<td>Hungary</td>
+														<td>Italia Milan</td>
+														<td><span class="badge badge-primary">To WH</span></td>
+														<td><span class="badge badge-info">Accepted by WH</span></td>
+														<td>
+															<div class="btn-group">
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="View">
+																	<i class="si si-eye"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Products">
+																	<i class="si si-list"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Status history">
+																	<i class="si si-bar-chart"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Print packing list">
+																	<i class="si si-printer"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="History">
+																	<i class="si si-book-open"></i>
+																</a>
+																<a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" title="" data-original-title="Rollback">
+																	<i class="si si-loop"></i>
+																</a>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<!-- /.row -->
+							</div>
+						</div>
+						<!-- ./block -->
+					</div>
+					<!-- ./col-12 -->
+				</div>
+				<!-- ./row -->
+			</div>
+			<!-- END Page Content -->
+		</main>
+		<!-- END Main Container -->
+	</div>
+	<!-- END Page Container -->
+	<script src="assets/js/codebase.core.min.js"></script>
+	<script src="assets/js/codebase.app.min.js"></script>
+	<script src="assets/js/plugins/datatables/jquery.dataTables.min.js"></script>
+	<script src="assets/js/plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
+	<script src="assets/js/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+	<script src="assets/js/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+	<!-- Page JS Code -->
+	<script>jQuery(function () { Codebase.helpers(['datepicker']); });</script>
+</body>
+
+</html>
